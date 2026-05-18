@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursuri — Fitnessstudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html">🏋️ Fitnessstudio</a>
+    <div>
+        <a href="membri.html" class="btn btn-outline-light btn-sm me-2">Membri</a>
+        <a href="traineri.html" class="btn btn-outline-light btn-sm me-2">Traineri</a>
+        <a href="cursuri.html" class="btn btn-outline-light btn-sm">Cursuri</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h2>Gestionare Cursuri</h2>
+
+    <!-- Formular adaugare -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Adaugă Curs Nou</h5>
+            <div class="row g-2">
+                <div class="col-md-2">
+                    <input type="text" id="nume" class="form-control" placeholder="Nume curs">
+                </div>
+                <div class="col-md-2">
+                    <select id="trainerId" class="form-select">
+                        <option value="">Selectează trainer</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select id="zi" class="form-select">
+                        <option value="">Ziua</option>
+                        <option>Luni</option>
+                        <option>Marți</option>
+                        <option>Miercuri</option>
+                        <option>Joi</option>
+                        <option>Vineri</option>
+                        <option>Sâmbătă</option>
+                        <option>Duminică</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <input type="time" id="ora" class="form-control">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" id="capacitateMaxima" class="form-control" placeholder="Capacitate">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100" onclick="adaugaCurs()">Adaugă</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabel cursuri -->
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nume</th>
+                        <th>Trainer</th>
+                        <th>Zi</th>
+                        <th>Ora</th>
+                        <th>Capacitate</th>
+                        <th>Înscriși</th>
+                        <th>Auslastung</th>
+                        <th>Acțiuni</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-cursuri"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/cursuri.js"></script>
+</body>
+</html>
