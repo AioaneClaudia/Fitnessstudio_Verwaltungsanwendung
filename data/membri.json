@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nume": "Ion Popescu",
+    "email": "ion.popescu@email.com",
+    "telefon": "0722111222",
+    "dataInscriere": "2024-01-15",
+    "activ": true
+  },
+  {
+    "id": 2,
+    "nume": "Maria Ionescu",
+    "email": "maria.ionescu@email.com",
+    "telefon": "0733222333",
+    "dataInscriere": "2024-02-20",
+    "activ": true
+  },
+  {
+    "id": 3,
+    "nume": "Andrei Constantin",
+    "email": "andrei.constantin@email.com",
+    "telefon": "0744333444",
+    "dataInscriere": "2024-03-10",
+    "activ": false
+  }
+]
