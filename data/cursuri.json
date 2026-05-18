@@ -1,0 +1,9 @@
+[ {
+  "id" : 1,
+  "nume" : "Baze de date",
+  "trainerId" : 1,
+  "zi" : "Joi",
+  "ora" : "12:22",
+  "capacitateMaxima" : 33,
+  "inscrisi" : 0
+} ]
