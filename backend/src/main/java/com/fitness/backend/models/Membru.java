@@ -1,5 +1,8 @@
 package com.fitness.backend.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Membru {
     private int id;
     private String nume;
@@ -7,6 +10,8 @@ public class Membru {
     private String telefon;
     private String dataInscriere;
     private boolean activ;
+
+    private List<Integer> cursuriInscriseIds = new ArrayList<>();
 
     public Membru() {}
 
@@ -27,4 +32,10 @@ public class Membru {
 
     public boolean isActiv() { return activ; }
     public void setActiv(boolean activ) { this.activ = activ; }
+
+    public List<Integer> getCursuriInscriseIds() {
+        if (this.cursuriInscriseIds == null) this.cursuriInscriseIds = new ArrayList<>();
+        return cursuriInscriseIds;
+    }
+    public void setCursuriInscriseIds(List<Integer> cursuriInscriseIds) { this.cursuriInscriseIds = cursuriInscriseIds; }
 }

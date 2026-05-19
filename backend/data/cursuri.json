@@ -5,5 +5,7 @@
   "zi" : "Joi",
   "ora" : "12:22",
   "capacitateMaxima" : 33,
-  "inscrisi" : 0
+  "inscrisi" : 1,
+  "membriInscrisiIds" : [ 7 ],
+  "listaAsteptareIds" : [ ]
 } ]

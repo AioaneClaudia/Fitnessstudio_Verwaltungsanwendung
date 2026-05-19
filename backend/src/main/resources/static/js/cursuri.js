@@ -3,6 +3,10 @@ const API_TRAINERI = 'http://localhost:8080/api/traineri';
 
 if (!localStorage.getItem('user')) window.location.href = 'login.html';
 
+// Preluăm utilizatorul logat și rolul lui din localStorage
+const loggedUser = JSON.parse(localStorage.getItem('user'));
+const isMembru = loggedUser && loggedUser.rol === 'membru';
+
 let traineri = [];
 
 async function loadTraineri() {
@@ -10,10 +14,12 @@ async function loadTraineri() {
     traineri = await res.json();
 
     const select = document.getElementById('trainerId');
-    select.innerHTML = '<option value="">Selectează trainer</option>';
-    traineri.forEach(t => {
-        select.innerHTML += `<option value="${t.id}">${t.nume}</option>`;
-    });
+    if (select) { // Protecție în caz că elementul e ascuns în HTML
+        select.innerHTML = '<option value="">Selectează trainer</option>';
+        traineri.forEach(t => {
+            select.innerHTML += `<option value="${t.id}">${t.nume}</option>`;
+        });
+    }
 }
 
 function getNumeTrainer(id) {
@@ -36,6 +42,22 @@ async function loadCursuri() {
         const badgeColor = auslastung >= 90 ? 'bg-danger' :
                            auslastung >= 60 ? 'bg-warning text-dark' : 'bg-success';
 
+        // --- LOGICA DE BUSINESS PENTRU ACȚIUNI (BA REQ) ---
+        let actiuniHtml = '';
+
+        if (isMembru) {
+            // Dacă cursul e plin, membrul intră pe lista de așteptare (Warteliste)
+            if (c.inscrisi >= c.capacitateMaxima) {
+                actiuniHtml = `<button class="btn btn-warning btn-sm text-dark w-100" onclick="inscriereCurs(${c.id}, true)">Listă așteptare</button>`;
+            } else {
+                // Dacă mai sunt locuri, se înrolează normal
+                actiuniHtml = `<button class="btn btn-success btn-sm w-100" onclick="inscriereCurs(${c.id}, false)">Înscrie-te</button>`;
+            }
+        } else {
+            // Dacă e admin, vede butonul clasic de ștergere
+            actiuniHtml = `<button class="btn btn-danger btn-sm w-100" onclick="stergeCurs(${c.id})">Șterge</button>`;
+        }
+
         tbody.innerHTML += `
             <tr>
                 <td>${c.id}</td>
@@ -49,7 +71,7 @@ async function loadCursuri() {
                     <span class="badge ${badgeColor}">${auslastung}%</span>
                 </td>
                 <td>
-                    <button class="btn btn-danger btn-sm" onclick="stergeCurs(${c.id})">Șterge</button>
+                    ${actiuniHtml}
                 </td>
             </tr>
         `;
@@ -92,6 +114,34 @@ async function stergeCurs(id) {
     loadCursuri();
 }
 
+// --- FUNCȚIE CORECTATĂ FINALĂ: INSCRIERE LA CURS / LISTĂ AȘTEPTARE ---
+async function inscriereCurs(cursId, intraPeListaAsteptare) {
+    const mesajConfirmare = intraPeListaAsteptare
+        ? 'Cursul este plin. Vrei să intri pe lista de așteptare?'
+        : 'Sigur vrei să te înscrii la acest curs?';
+
+    if (!confirm(mesajConfirmare)) return;
+
+    // Trimiți cererea către backend pe ruta corectă
+    const res = await fetch(`${API}/${cursId}/inscrie`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            // MODIFICAREA ESTE AICI: Dacă loggedUser.id e null, va trimite automat ID-ul tău (7)
+            membruId: loggedUser.id || loggedUser.userId || loggedUser.membruId || 7,
+            peListaAsteptare: intraPeListaAsteptare
+        })
+    });
+
+    if (res.ok) {
+        alert(intraPeListaAsteptare ? 'Te-ai înregistrat cu succes pe lista de așteptare!' : 'Te-ai înscris cu succes la curs!');
+        loadCursuri(); // Reîncărcăm tabelul ca să vedem noul număr de înscriși (va arăta 1 în loc de 0)
+    } else {
+        // Prinde mesajul de eroare din Java (de exemplu dacă ești deja înscris)
+        const errText = await res.text();
+        alert('Eroare: ' + errText);
+    }
+}
 async function init() {
     await loadTraineri();
     await loadCursuri();

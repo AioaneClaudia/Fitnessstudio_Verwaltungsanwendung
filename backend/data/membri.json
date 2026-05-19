@@ -1,26 +1,33 @@
-[
-  {
-    "id": 1,
-    "nume": "Ion Popescu",
-    "email": "ion.popescu@email.com",
-    "telefon": "0722111222",
-    "dataInscriere": "2024-01-15",
-    "activ": true
-  },
-  {
-    "id": 2,
-    "nume": "Maria Ionescu",
-    "email": "maria.ionescu@email.com",
-    "telefon": "0733222333",
-    "dataInscriere": "2024-02-20",
-    "activ": true
-  },
-  {
-    "id": 3,
-    "nume": "Andrei Constantin",
-    "email": "andrei.constantin@email.com",
-    "telefon": "0744333444",
-    "dataInscriere": "2024-03-10",
-    "activ": false
-  }
-]
+[ {
+  "id" : 3,
+  "nume" : "David Andrus",
+  "email" : "davidandrua@gmail.com",
+  "telefon" : "0722111222",
+  "dataInscriere" : "2024-01-15",
+  "activ" : true,
+  "cursuriInscriseIds" : [ ]
+}, {
+  "id" : 5,
+  "nume" : "Andreea",
+  "email" : "dsajkhdjksa@yahoo",
+  "telefon" : "0733222333",
+  "dataInscriere" : "2024-02-20",
+  "activ" : true,
+  "cursuriInscriseIds" : [ ]
+}, {
+  "id" : 6,
+  "nume" : "Paul",
+  "email" : "raulnistor008@gmail.com",
+  "telefon" : "0744333444",
+  "dataInscriere" : "2024-03-10",
+  "activ" : false,
+  "cursuriInscriseIds" : [ ]
+}, {
+  "id" : 7,
+  "nume" : "Crucin Patricia",
+  "email" : "crucin.patricia@yahoo.com",
+  "telefon" : "0740353209",
+  "dataInscriere" : "2026-05-20",
+  "activ" : true,
+  "cursuriInscriseIds" : [ 1 ]
+} ]

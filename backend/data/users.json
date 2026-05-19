@@ -34,4 +34,10 @@
   "email" : "raulnistor008@gmail.com",
   "parola" : "Paul123",
   "rol" : "membru"
+}, {
+  "id" : 7,
+  "nume" : "Crucin Patricia",
+  "email" : "crucin.patricia@yahoo.com",
+  "parola" : "1234567",
+  "rol" : "membru"
 } ]
