@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Membru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html">🏋️ Fitnessstudio</a>
+    <div>
+        <a href="profil.html" class="btn btn-outline-light btn-sm me-2">Profil</a>
+        <a href="membri.html" class="btn btn-outline-light btn-sm me-2">Membri</a>
+        <a href="traineri.html" class="btn btn-outline-light btn-sm me-2">Traineri</a>
+        <a href="cursuri.html" class="btn btn-outline-light btn-sm me-2">Cursuri</a>
+        <button class="btn btn-outline-danger btn-sm" onclick="logout()">Logout</button>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="card shadow w-50 mx-auto">
+        <div class="card-body text-center">
+            <h2 id="nume-membru">Salut!</h2>
+            <p><strong>Email:</strong> <span id="email-membru"></span></p>
+            <p><strong>Telefon:</strong> <span id="telefon-membru"></span></p>
+            <hr>
+            <h4 id="status-pontaj">Status: ...</h4>
+            <button id="btn-pontaj" class="btn btn-lg w-75" onclick="schimbaPontaj()">...</button>
+        </div>
+    </div>
+</div>
+<script src="js/auth.js"></script>
+<script>
+    const loggedUser = getUser(); // Folosim funcția din auth.js
+    let membruDate = null;
+
+    async function incarcaProfil() {
+        try {
+            const url = (loggedUser.rol === 'trainer') ? 'http://localhost:8080/api/traineri' : 'http://localhost:8080/api/membri';
+            const res = await fetch(url);
+
+            // Verificăm dacă răspunsul e OK
+            if (!res.ok) {
+                console.error("Eroare server: Răspunsul nu este OK. Cod:", res.status);
+                return;
+            }
+
+            const lista = await res.json();
+
+            // Verificăm dacă lista este într-adevăr un Array
+            if (!Array.isArray(lista)) {
+                console.error("Eroare: API-ul nu a returnat o listă, ci:", lista);
+                return;
+            }
+
+            // Acum căutarea este 100% sigură
+            membruDate = lista.find(m =>
+                m && m.email && m.email.trim().toLowerCase() === loggedUser.email.trim().toLowerCase()
+            );
+
+            if (!membruDate) {
+                console.error("Nu am găsit utilizatorul cu email:", loggedUser.email);
+                document.getElementById('nume-membru').textContent = "Profilul nu a fost găsit în baza de date.";
+                return;
+            }
+
+            // Popularea datelor (doar dacă membruDate există)
+            document.getElementById('nume-membru').textContent = "Salut, " + (membruDate.nume || "Utilizator");
+            document.getElementById('email-membru').textContent = membruDate.email || "Nespecificat";
+            document.getElementById('telefon-membru').textContent = membruDate.telefon || "Nespecificat";
+
+            if (loggedUser.rol === 'membru') {
+                actualizeazaButonPontaj();
+            } else {
+                document.getElementById('status-pontaj').textContent = "Statut: Antrenor";
+                document.getElementById('btn-pontaj').style.display = 'none';
+            }
+        } catch (err) {
+            console.error("Eroare critică la încărcarea profilului:", err);
+        }
+    }
+
+    function actualizeazaButonPontaj() {
+        if (!membruDate) return; // Siguranță
+
+        const status = document.getElementById('status-pontaj');
+        const btn = document.getElementById('btn-pontaj');
+
+        if (membruDate.estePontat) {
+            status.textContent = "Status: În sală (Pontat la " + (membruDate.ultimaOraPontare || "N/A") + ")";
+            btn.textContent = "Ieșire (Clock Out)";
+            btn.className = "btn btn-danger btn-lg w-75";
+        } else {
+            status.textContent = "Status: În afara sălii";
+            btn.textContent = "Intrare (Clock In)";
+            btn.className = "btn btn-success btn-lg w-75";
+        }
+    }
+
+    async function schimbaPontaj() {
+        if (!membruDate || !membruDate.id) {
+            alert("Datele nu sunt încărcate încă. Așteaptă o secundă.");
+            return;
+        }
+
+        await fetch(`http://localhost:8080/api/membri/${membruDate.id}/pontaj`, { method: 'POST' });
+        await incarcaProfil(); // Reîncarcă datele
+    }
+
+    // Inițializare
+    incarcaProfil();
+</script>
+</body>
+</html>

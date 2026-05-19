@@ -10,4 +10,10 @@
   "specializare" : "Cardio",
   "email" : "crucin.anya@yahoo.com",
   "telefon" : "0737823723"
+}, {
+  "id" : 9,
+  "nume" : "andreea",
+  "specializare" : "pilates",
+  "email" : "andreealdea13@gmail.com",
+  "telefon" : "0962617437"
 } ]

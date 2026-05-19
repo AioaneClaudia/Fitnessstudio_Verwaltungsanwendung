@@ -2,6 +2,7 @@ package com.fitness.backend.controllers;
 
 import com.fitness.backend.models.Membru;
 import com.fitness.backend.services.MembruService;
+import com.fitness.backend.storage.JsonStorage;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,5 +36,19 @@ public class MembruController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable int id) {
         membruService.delete(id);
+    }
+
+    @PostMapping("/{id}/pontaj")
+    public Membru pontaj(@PathVariable int id) {
+        List<Membru> membri = JsonStorage.read("membri", Membru.class);
+        for (Membru m : membri) {
+            if (m.getId() == id) {
+                m.setEstePontat(!m.isEstePontat());
+                m.setUltimaOraPontare(java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HH:mm")));
+                JsonStorage.write("membri", membri);
+                return m;
+            }
+        }
+        return null;
     }
 }

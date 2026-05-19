@@ -46,4 +46,10 @@
   "email" : "crucin.anya@yahoo.com",
   "parola" : "anyapatri",
   "rol" : "trainer"
+}, {
+  "id" : 9,
+  "nume" : "andreea",
+  "email" : "andreealdea13@gmail.com",
+  "parola" : "Andreea.13",
+  "rol" : "trainer"
 } ]
