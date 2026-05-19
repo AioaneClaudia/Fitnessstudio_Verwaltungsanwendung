@@ -12,7 +12,9 @@ import java.util.List;
 @Component
 public class JsonStorage {
 
-    private static final String DATA_PATH = System.getProperty("user.dir") + "/../data/";    
+    private static final String DATA_PATH = System.getProperty("user.dir") 
+    + File.separator + "data" 
+    + File.separator;
     
     private static final ObjectMapper mapper = new ObjectMapper();
 
