@@ -12,7 +12,9 @@ import java.util.List;
 @Component
 public class JsonStorage {
 
-    private static final String DATA_PATH = System.getProperty("user.dir") + "/../data/";    private static final ObjectMapper mapper = new ObjectMapper();
+    private static final String DATA_PATH = System.getProperty("user.dir") + "/../data/";    
+    
+    private static final ObjectMapper mapper = new ObjectMapper();
 
     public static <T> List<T> read(String fileName, Class<T> clazz) {
         File file = new File(DATA_PATH + fileName + ".json");
