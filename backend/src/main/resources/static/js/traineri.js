@@ -1,5 +1,7 @@
 const API = 'http://localhost:8080/api/traineri';
 
+if (!localStorage.getItem('user')) window.location.href = 'login.html';
+
 async function loadTraineri() {
     const res = await fetch(API);
     const traineri = await res.json();

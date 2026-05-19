@@ -13,10 +13,20 @@
     <div>
         <a href="membri.html" class="btn btn-outline-light btn-sm me-2">Membri</a>
         <a href="traineri.html" class="btn btn-outline-light btn-sm me-2">Traineri</a>
-        <a href="cursuri.html" class="btn btn-outline-light btn-sm">Cursuri</a>
+        <a href="cursuri.html" class="btn btn-outline-light btn-sm me-2">Cursuri</a>
+        <span class="text-light me-3" id="user-info"></span>
+        <button class="btn btn-outline-danger btn-sm" onclick="logout()">Logout</button>
     </div>
 </nav>
-
+<script>
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) window.location.href = 'login.html';
+    document.getElementById('user-info').textContent = user ? `👤 ${user.nume}` : '';
+    function logout() {
+        localStorage.removeItem('user');
+        window.location.href = 'login.html';
+    }
+</script>
 <div class="container mt-4">
     <h2>Gestionare Traineri</h2>
 

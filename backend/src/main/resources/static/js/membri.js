@@ -1,5 +1,7 @@
 const API = 'http://localhost:8080/api/membri';
 
+if (!localStorage.getItem('user')) window.location.href = 'login.html';
+
 async function loadMembri() {
     const res = await fetch(API);
     const membri = await res.json();

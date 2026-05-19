@@ -1,6 +1,8 @@
 const API = 'http://localhost:8080/api/cursuri';
 const API_TRAINERI = 'http://localhost:8080/api/traineri';
 
+if (!localStorage.getItem('user')) window.location.href = 'login.html';
+
 let traineri = [];
 
 async function loadTraineri() {
