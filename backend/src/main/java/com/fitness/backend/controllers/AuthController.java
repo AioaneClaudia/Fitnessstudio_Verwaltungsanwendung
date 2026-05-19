@@ -31,4 +31,23 @@ public class AuthController {
 
         return Map.of("status", "error", "mesaj", "Email sau parolă greșită!");
     }
+
+    @PostMapping("/register")
+    public Map<String, String> register(@RequestBody User userNou) {
+    List<User> users = JsonStorage.read("users", User.class);
+
+    // Verifică dacă emailul există deja
+    for (User u : users) {
+        if (u.getEmail().equals(userNou.getEmail())) {
+            return Map.of("status", "error", "mesaj", "Email deja înregistrat!");
+        }
+    }
+
+    userNou.setId(JsonStorage.nextId(users));
+    userNou.setRol("membru");
+    users.add(userNou);
+    JsonStorage.write("users", users);
+
+    return Map.of("status", "ok");
+    }
 }
