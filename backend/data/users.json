@@ -40,4 +40,10 @@
   "email" : "crucin.patricia@yahoo.com",
   "parola" : "1234567",
   "rol" : "membru"
+}, {
+  "id" : 8,
+  "nume" : "Crucin Anya",
+  "email" : "crucin.anya@yahoo.com",
+  "parola" : "anyapatri",
+  "rol" : "trainer"
 } ]

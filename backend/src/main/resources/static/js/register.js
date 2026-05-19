@@ -3,8 +3,10 @@ async function register() {
     const email = document.getElementById('email').value;
     const parola = document.getElementById('parola').value;
     const parola2 = document.getElementById('parola2').value;
+    // Citim rolul selectat de utilizator (membru sau trainer)
+    const rol = document.getElementById('rol').value;
 
-    if (!nume || !email || !parola || !parola2) {
+    if (!nume || !email || !parola || !parola2 || !rol) {
         showEroare('Completează toate câmpurile!');
         return;
     }
@@ -22,7 +24,8 @@ async function register() {
     const res = await fetch('http://localhost:8080/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nume, email, parola, rol: 'membru' })
+        // Acum trimitem rolul dinamic colectat din formular
+        body: JSON.stringify({ nume, email, parola, rol })
     });
 
     const data = await res.json();

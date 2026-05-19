@@ -31,46 +31,45 @@
             '<a href="users.html" class="btn btn-outline-light btn-sm me-2">Utilizatori</a>';
     }
 </script>
+
 <div class="container mt-4">
     <h2>Gestionare Traineri</h2>
 
-    <!-- Formular adaugare -->
-    <div class="card mb-4">
+    <div class="card mb-4" id="zona-adaugare-trainer">
         <div class="card-body">
-            <h5 class="card-title">Adaugă Trainer Nou</h5>
+            <h5 class="card-title" id="titlu-formular-trainer">Adaugă Trainer Nou</h5>
             <div class="row g-2">
                 <div class="col-md-3">
                     <input type="text" id="nume" class="form-control" placeholder="Nume">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <input type="text" id="specializare" class="form-control" placeholder="Specializare">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <input type="email" id="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col-md-2">
-                    <input type="text" id="telefon" class="form-control" placeholder="Telefon">
+                    <input type="text" id="telefon" class="form-control" placeholder="Telefon" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                 </div>
                 <div class="col-md-2">
-                    <button class="btn btn-primary w-100" onclick="adaugaTrainer()">Adaugă</button>
+                    <button id="btn-actiune-trainer" class="btn btn-primary w-100" onclick="adaugaTrainer()">Adaugă</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Tabel traineri -->
     <div class="card">
         <div class="card-body">
-            <table class="table table-hover">
+            <table class="table table-hover align-middle">
                 <thead class="table-dark">
-                    <tr>
-                        <th>ID</th>
-                        <th>Nume</th>
-                        <th>Specializare</th>
-                        <th>Email</th>
-                        <th>Telefon</th>
-                        <th>Acțiuni</th>
-                    </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Nume</th>
+                    <th>Specializare</th>
+                    <th>Email</th>
+                    <th>Telefon</th>
+                    <th>Acțiuni</th>
+                </tr>
                 </thead>
                 <tbody id="tabel-traineri"></tbody>
             </table>

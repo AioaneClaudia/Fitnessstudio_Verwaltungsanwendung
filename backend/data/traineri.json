@@ -4,4 +4,10 @@
   "specializare" : "Smecher",
   "email" : "davidandrua@gmail.com",
   "telefon" : "0943230232"
+}, {
+  "id" : 8,
+  "nume" : "Crucin Anya",
+  "specializare" : "Cardio",
+  "email" : "crucin.anya@yahoo.com",
+  "telefon" : "0737823723"
 } ]
