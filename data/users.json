@@ -28,4 +28,10 @@
   "email" : "dsajkhdjksa@yahoo",
   "parola" : "123456",
   "rol" : "membru"
+}, {
+  "id" : 6,
+  "nume" : "Paul",
+  "email" : "raulnistor008@gmail.com",
+  "parola" : "Paul123",
+  "rol" : "membru"
 } ]
