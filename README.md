@@ -20,13 +20,10 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 | Modul | Beschreibung |
 |---|---|
 | Authentifizierung | Registrierung, Login, rollenbasierte Zugriffskontrolle (RBAC) |
-| Mitgliederverwaltung | Profile anlegen, bearbeiten, Mitgliedschaft pausieren / kündigen, DSGVO-Export |
-| Trainerverwaltung | Trainerprofile, Qualifikationen, Wochenplan, Auslastungsübersicht |
-| Kursplan | Kurse erstellen, Wochenplan, Anmeldung / Abmeldung, Warteliste |
+| Mitgliederverwaltung | Mitgliedschaft bearbeiten / pausieren / kündigen, DSGVO-Export |
+| Trainerverwaltung | Trainerprofile, Qualifikationen, Auslastungsübersicht |
+| Kursplan | Kurse erstellen, Anmeldung / Abmeldung, Warteliste |
 | Studioauslastung | Echtzeit-Check-in/out, Auslastungsanzeige, historische Analyse |
-| Geräteverwaltung | Inventar, Wartungsplan, Defektmeldung |
-| Benachrichtigungen | Automatische E-Mails für alle relevanten Ereignisse |
-| Dashboard | KPI-Übersicht für Admins, Self-Service-Portal für Mitglieder |
 
 ---
 
@@ -40,7 +37,6 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 | Backend | – |
 | Datenspeicherung | JSON-Dateien |
 | Versionskontrolle | Git / GitHub |
-| Deployment | – |
 
 ---
 

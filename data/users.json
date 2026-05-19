@@ -1,0 +1,31 @@
+[ {
+  "id" : 1,
+  "nume" : "Admin Principal",
+  "email" : "admin@fitness.com",
+  "parola" : "admin123",
+  "rol" : "admin"
+}, {
+  "id" : 2,
+  "nume" : "Trainer Ion",
+  "email" : "trainer@fitness.com",
+  "parola" : "trainer123",
+  "rol" : "trainer"
+}, {
+  "id" : 3,
+  "nume" : "David Andrus",
+  "email" : "davidandrua@gmail.com",
+  "parola" : "David05",
+  "rol" : "membru"
+}, {
+  "id" : 4,
+  "nume" : "David ",
+  "email" : "davidandrua@gmal.com",
+  "parola" : "David11",
+  "rol" : "membru"
+}, {
+  "id" : 5,
+  "nume" : "Andreea",
+  "email" : "dsajkhdjksa@yahoo",
+  "parola" : "123456",
+  "rol" : "membru"
+} ]
