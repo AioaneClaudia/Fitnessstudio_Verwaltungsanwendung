@@ -1,5 +1,4 @@
 requireAuth();
-renderNavbar();
 
 const API = 'http://localhost:8080/api/cursuri';
 const API_TRAINERI = 'http://localhost:8080/api/traineri';
@@ -28,15 +27,17 @@ async function loadCursuri() {
     const cursuri = await res.json();
 
     const tbody = document.getElementById('tabel-cursuri');
+    const count = document.getElementById('count-cursuri');
     tbody.innerHTML = '';
+    if (count) count.textContent = `${cursuri.length} cursuri`;
 
     cursuri.forEach(c => {
         const auslastung = c.capacitateMaxima > 0
             ? Math.round((c.inscrisi / c.capacitateMaxima) * 100)
             : 0;
 
-        const badgeColor = auslastung >= 90 ? 'bg-danger' :
-                           auslastung >= 60 ? 'bg-warning text-dark' : 'bg-success';
+        const progressClass = auslastung >= 90 ? 'bg-danger' :
+                              auslastung >= 60 ? 'bg-warning' : 'bg-success';
 
         const eInscris = c.membriInscrisi && c.membriInscrisi.includes(user.id);
         const eWaiting = c.waitingList && c.waitingList.includes(user.id);
@@ -45,12 +46,12 @@ async function loadCursuri() {
         if (user.rol === 'membru') {
             if (eInscris) {
                 btnInscriere = `
-                    <span class="badge bg-success me-1">Înscris</span>
+                    <span class="badge badge-success">Înscris</span>
                     <button class="btn btn-outline-danger btn-sm" onclick="dezinscriere(${c.id})">Retrage</button>
                 `;
             } else if (eWaiting) {
                 btnInscriere = `
-                    <span class="badge bg-warning text-dark me-1">Waiting</span>
+                    <span class="badge badge-warning">Waiting</span>
                     <button class="btn btn-outline-danger btn-sm" onclick="dezinscriere(${c.id})">Retrage</button>
                 `;
             } else {
@@ -62,7 +63,7 @@ async function loadCursuri() {
 
         let btnSterge = '';
         if (user.rol === 'admin') {
-            btnSterge = `<button class="btn btn-danger btn-sm" onclick="stergeCurs(${c.id})">Șterge</button>`;
+            btnSterge = `<button class="btn btn-danger btn-sm" onclick="stergeCurs(${c.id})"><i class="ti ti-trash"></i></button>`;
         }
 
         tbody.innerHTML += `
@@ -75,22 +76,19 @@ async function loadCursuri() {
                 <td>${c.capacitateMaxima}</td>
                 <td>${c.inscrisi}</td>
                 <td>
-                    <div class="progress" style="height: 20px;">
-                        <div class="progress-bar ${badgeColor}" style="width: ${auslastung}%">
-                            ${auslastung}%
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar ${progressClass}" style="width:${auslastung}%"></div>
                     </div>
+                    <small style="font-size:11px;color:#888">${auslastung}%</small>
                 </td>
-                <td>${btnInscriere} ${btnSterge}</td>
+                <td style="display:flex;gap:6px;align-items:center">${btnInscriere} ${btnSterge}</td>
             </tr>
         `;
     });
 }
 
 async function inscriere(cursId) {
-    const res = await fetch(`${API}/${cursId}/inscriere/${user.id}`, {
-        method: 'POST'
-    });
+    const res = await fetch(`${API}/${cursId}/inscriere/${user.id}`, { method: 'POST' });
     const data = await res.json();
     alert(data.mesaj);
     loadCursuri();
@@ -98,9 +96,7 @@ async function inscriere(cursId) {
 
 async function dezinscriere(cursId) {
     if (!confirm('Sigur vrei să te retragi?')) return;
-    const res = await fetch(`${API}/${cursId}/inscriere/${user.id}`, {
-        method: 'DELETE'
-    });
+    const res = await fetch(`${API}/${cursId}/inscriere/${user.id}`, { method: 'DELETE' });
     const data = await res.json();
     alert(data.mesaj);
     loadCursuri();

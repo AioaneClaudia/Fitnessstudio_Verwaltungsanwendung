@@ -4,39 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursuri — Fitnessstudio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
+<body>
 
-<nav class="navbar navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="index.html">🏋️ Fitnessstudio</a>
-    <div>
-        <a href="membri.html" class="btn btn-outline-light btn-sm me-2">Membri</a>
-        <a href="traineri.html" class="btn btn-outline-light btn-sm me-2">Traineri</a>
-        <a href="cursuri.html" class="btn btn-outline-light btn-sm me-2">Cursuri</a>
-        <a href="profil.html" class="btn btn-outline-light btn-sm me-2">Profilul Meu</a>
-        <span id="btn-users"></span>
-        <span class="text-light me-3" id="user-info"></span>
-        <button class="btn btn-outline-danger btn-sm" onclick="logout()">Logout</button>
+<div class="sidebar">
+    <div class="sidebar-logo">
+        <span>Fitnessstudio</span>
+        <p>Management App</p>
     </div>
-</nav>
+    <div class="nav-section">General</div>
+    <a href="index.html" class="nav-item"><i class="ti ti-layout-dashboard"></i> Dashboard</a>
+    <a href="membri.html" class="nav-item"><i class="ti ti-users"></i> Membri</a>
+    <a href="traineri.html" class="nav-item"><i class="ti ti-barbell"></i> Traineri</a>
+    <a href="cursuri.html" class="nav-item active"><i class="ti ti-calendar"></i> Cursuri</a>
+    <div class="nav-section">Cont</div>
+    <a href="profil.html" class="nav-item"><i class="ti ti-user-circle"></i> Profilul meu</a>
+    <span id="nav-users"></span>
+    <div class="sidebar-bottom">
+        <div class="user-pill">
+            <div class="user-avatar" id="user-avatar">--</div>
+            <div>
+                <span class="user-name" id="user-name">—</span>
+                <small class="user-role" id="user-role">—</small>
+            </div>
+        </div>
+        <button class="btn-logout" onclick="logout()">
+            <i class="ti ti-logout"></i> Deconectare
+        </button>
+    </div>
+</div>
 
-<div class="container mt-4">
-    <h2>Gestionare Cursuri</h2>
+<div class="main-content">
+    <div class="page-header">
+        <h1>Cursuri</h1>
+        <p>Gestionează cursurile și înscrierile</p>
+    </div>
 
-    <div class="card mb-4" id="zona-adaugare-curs">
+    <div class="card" id="zona-adaugare" style="display:none">
+        <div class="card-header">
+            <h5>Adaugă curs nou</h5>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">Adaugă Curs Nou</h5>
-            <div class="row g-2">
-                <div class="col-md-2">
-                    <input type="text" id="nume" class="form-control" placeholder="Nume curs">
+            <div class="form-row" style="grid-template-columns: repeat(6, 1fr)">
+                <div>
+                    <label class="form-label">Nume curs</label>
+                    <input type="text" id="nume" class="form-control" placeholder="Yoga, Box...">
                 </div>
-                <div class="col-md-2">
+                <div>
+                    <label class="form-label">Trainer</label>
                     <select id="trainerId" class="form-select">
-                        <option value="">Selectează trainer</option>
+                        <option value="">Selectează</option>
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div>
+                    <label class="form-label">Ziua</label>
                     <select id="zi" class="form-select">
                         <option value="">Ziua</option>
                         <option>Luni</option>
@@ -48,23 +70,30 @@
                         <option>Duminică</option>
                     </select>
                 </div>
-                <div class="col-md-2">
+                <div>
+                    <label class="form-label">Ora</label>
                     <input type="time" id="ora" class="form-control">
                 </div>
-                <div class="col-md-2">
-                    <input type="number" id="capacitateMaxima" class="form-control" placeholder="Capacitate">
+                <div>
+                    <label class="form-label">Capacitate</label>
+                    <input type="number" id="capacitateMaxima" class="form-control" placeholder="20">
                 </div>
-                <div class="col-md-2">
-                    <button class="btn btn-primary w-100" onclick="adaugaCurs()">Adaugă</button>
+                <div style="display:flex;align-items:flex-end">
+                    <button class="btn btn-primary btn-w100" onclick="adaugaCurs()">
+                        <i class="ti ti-plus"></i> Adaugă
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="card">
-        <div class="card-body">
-            <table class="table table-hover">
-                <thead class="table-dark">
+        <div class="card-header">
+            <h5>Lista cursuri</h5>
+            <span class="count-badge" id="count-cursuri">0 cursuri</span>
+        </div>
+        <table class="table">
+            <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nume</th>
@@ -76,25 +105,28 @@
                     <th>Auslastung</th>
                     <th>Acțiuni</th>
                 </tr>
-                </thead>
-                <tbody id="tabel-cursuri"></tbody>
-            </table>
-        </div>
+            </thead>
+            <tbody id="tabel-cursuri"></tbody>
+        </table>
     </div>
 </div>
 
 <script src="js/auth.js"></script>
 <script src="js/cursuri.js"></script>
 <script>
-    const currentUser = getUser();
-    if (!currentUser || currentUser.rol !== 'admin') {
-        document.getElementById('zona-adaugare-curs').style.display = 'none';
-    }
-    if (currentUser && currentUser.rol === 'admin') {
-        document.getElementById('btn-users').innerHTML =
-            '<a href="users.html" class="btn btn-outline-warning btn-sm me-2">Utilizatori</a>';
+    const cu = getUser();
+    if (cu) {
+        document.getElementById('user-name').textContent = cu.nume;
+        document.getElementById('user-role').textContent = cu.rol;
+        document.getElementById('user-avatar').textContent = cu.nume.split(' ').map(n=>n[0]).join('').toUpperCase().slice(0,2);
+        if (cu.rol === 'admin' || cu.rol === 'trainer') {
+            document.getElementById('zona-adaugare').style.display = 'block';
+        }
+        if (cu.rol === 'admin') {
+            document.getElementById('nav-users').innerHTML =
+                '<a href="users.html" class="nav-item"><i class="ti ti-settings"></i> Utilizatori</a>';
+        }
     }
 </script>
-
 </body>
 </html>

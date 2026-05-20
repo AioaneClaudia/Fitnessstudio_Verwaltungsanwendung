@@ -1,13 +1,16 @@
-const API = 'http://localhost:8080/api/membri';
-
 if (!localStorage.getItem('user')) window.location.href = 'login.html';
+
+const API = 'http://localhost:8080/api/membri';
+const user = getUser();
 
 async function loadMembri() {
     const res = await fetch(API);
     const membri = await res.json();
 
     const tbody = document.getElementById('tabel-membri');
+    const count = document.getElementById('count-membri');
     tbody.innerHTML = '';
+    if (count) count.textContent = `${membri.length} membri`;
 
     membri.forEach(m => {
         tbody.innerHTML += `
@@ -15,15 +18,11 @@ async function loadMembri() {
                 <td>${m.id}</td>
                 <td>${m.nume}</td>
                 <td>${m.email}</td>
-                <td>${m.telefon}</td>
-                <td>${m.dataInscriere}</td>
+                <td>${m.telefon || '—'}</td>
+                <td>${m.dataInscriere || '—'}</td>
+                <td><span class="badge ${m.activ ? 'badge-success' : 'badge-secondary'}">${m.activ ? 'Activ' : 'Inactiv'}</span></td>
                 <td>
-                    <span class="badge ${m.activ ? 'bg-success' : 'bg-secondary'}">
-                        ${m.activ ? 'Activ' : 'Inactiv'}
-                    </span>
-                </td>
-                <td>
-                    <button class="btn btn-danger btn-sm" onclick="stergeMembru(${m.id})">Șterge</button>
+                    ${user && user.rol === 'admin' ? `<button class="btn btn-danger btn-sm" onclick="stergeMembru(${m.id})"><i class="ti ti-trash"></i></button>` : ''}
                 </td>
             </tr>
         `;
@@ -60,7 +59,6 @@ async function adaugaMembru() {
 
 async function stergeMembru(id) {
     if (!confirm('Sigur vrei să ștergi acest membru?')) return;
-
     await fetch(`${API}/${id}`, { method: 'DELETE' });
     loadMembri();
 }

@@ -6,7 +6,7 @@
   "ora" : "13:20",
   "capacitateMaxima" : 12,
   "inscrisi" : 2,
-  "membriInscrisi" : [ 4, 6 ],
+  "membriInscrisi" : [ 6, 4 ],
   "waitingList" : [ ]
 }, {
   "id" : 2,
