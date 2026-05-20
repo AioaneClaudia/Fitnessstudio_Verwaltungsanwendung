@@ -21,23 +21,10 @@
     </div>
 </nav>
 
-<script src="js/auth.js"></script>
-<script>
-    requireAuth();
-    renderNavbar();
-
-    const user = getUser();
-    // Afișează butonul de utilizatori doar pentru admin
-    if (user && user.rol === 'admin') {
-        document.getElementById('btn-users').innerHTML =
-            '<a href="users.html" class="btn btn-outline-light btn-sm me-2">Utilizatori</a>';
-    }
-</script>
-
 <div class="container mt-4">
     <h2>Gestionare Cursuri</h2>
 
-    <div class="card mb-4 d-none" id="zona-adaugare-curs">
+    <div class="card mb-4" id="zona-adaugare-curs">
         <div class="card-body">
             <h5 class="card-title">Adaugă Curs Nou</h5>
             <div class="row g-2">
@@ -87,7 +74,8 @@
                     <th>Capacitate</th>
                     <th>Înscriși</th>
                     <th>Auslastung</th>
-                    <th>Acțiuni</th> </tr>
+                    <th>Acțiuni</th>
+                </tr>
                 </thead>
                 <tbody id="tabel-cursuri"></tbody>
             </table>
@@ -95,19 +83,18 @@
     </div>
 </div>
 
+<script src="js/auth.js"></script>
 <script src="js/cursuri.js"></script>
 <script>
-    // Afișează panoul de adăugare cursuri DOAR dacă utilizatorul logat este admin
-    if (user && user.rol === 'admin') {
-        document.getElementById('zona-adaugare-curs').classList.remove('d-none');
+    const currentUser = getUser();
+    if (!currentUser || currentUser.rol !== 'admin') {
+        document.getElementById('zona-adaugare-curs').style.display = 'none';
     }
-
-    // Notă pentru logica din js/cursuri.js:
-    // În funcția voastră de afișare a tabelului (render), va trebui să verificați rolul:
-    // - Dacă e 'admin': generează buton de Ștergere.
-    // - Dacă e 'membru': verifică dacă (inscrisi >= capacitate).
-    //      Dacă da -> generează buton galben "Intră pe lista de așteptare" (btn-warning)
-    //      Dacă nu -> generează buton verde "Înscrie-te" (btn-success)
+    if (currentUser && currentUser.rol === 'admin') {
+        document.getElementById('btn-users').innerHTML =
+            '<a href="users.html" class="btn btn-outline-warning btn-sm me-2">Utilizatori</a>';
+    }
 </script>
+
 </body>
 </html>

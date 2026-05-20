@@ -1,11 +1,11 @@
 package com.fitness.backend.services;
 
 import com.fitness.backend.models.Curs;
-import com.fitness.backend.models.Membru;
 import com.fitness.backend.storage.JsonStorage;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class CursService {
@@ -46,6 +46,71 @@ public class CursService {
         JsonStorage.write(FILE, cursuri);
     }
 
+    public Map<String, String> inscriere(int cursId, int membruId) {
+        List<Curs> cursuri = getAll();
+
+        for (Curs c : cursuri) {
+            if (c.getId() == cursId) {
+
+                // Deja inscris?
+                if (c.getMembriInscrisi().contains(membruId)) {
+                    return Map.of("status", "error", "mesaj", "Ești deja înscris la acest curs!");
+                }
+
+                // Deja pe waiting list?
+                if (c.getWaitingList().contains(membruId)) {
+                    return Map.of("status", "error", "mesaj", "Ești deja pe lista de așteptare!");
+                }
+
+                // Loc disponibil?
+                if (c.getInscrisi() < c.getCapacitateMaxima()) {
+                    c.getMembriInscrisi().add(membruId);
+                    c.setInscrisi(c.getInscrisi() + 1);
+                    JsonStorage.write(FILE, cursuri);
+                    return Map.of("status", "ok", "mesaj", "Înscris cu succes!");
+                } else {
+                    // Waiting list
+                    c.getWaitingList().add(membruId);
+                    JsonStorage.write(FILE, cursuri);
+                    return Map.of("status", "waiting", "mesaj", "Cursul e plin! Ai fost adăugat pe lista de așteptare.");
+                }
+            }
+        }
+
+        return Map.of("status", "error", "mesaj", "Cursul nu există!");
+    }
+
+    public Map<String, String> dezinscriere(int cursId, int membruId) {
+        List<Curs> cursuri = getAll();
+
+        for (Curs c : cursuri) {
+            if (c.getId() == cursId) {
+                if (c.getMembriInscrisi().contains(membruId)) {
+                    c.getMembriInscrisi().remove(Integer.valueOf(membruId));
+                    c.setInscrisi(c.getInscrisi() - 1);
+
+                    // Primul din waiting list trece la inscris
+                    if (!c.getWaitingList().isEmpty()) {
+                        int urmatorul = c.getWaitingList().remove(0);
+                        c.getMembriInscrisi().add(urmatorul);
+                        c.setInscrisi(c.getInscrisi() + 1);
+                    }
+
+                    JsonStorage.write(FILE, cursuri);
+                    return Map.of("status", "ok", "mesaj", "Dezînscris cu succes!");
+                }
+
+                if (c.getWaitingList().contains(membruId)) {
+                    c.getWaitingList().remove(Integer.valueOf(membruId));
+                    JsonStorage.write(FILE, cursuri);
+                    return Map.of("status", "ok", "mesaj", "Scos din lista de așteptare!");
+                }
+            }
+        }
+
+        return Map.of("status", "error", "mesaj", "Nu ești înscris la acest curs!");
+    }
+
     public double getAuslastung(int id) {
         List<Curs> cursuri = getAll();
         for (Curs c : cursuri) {
@@ -54,59 +119,5 @@ public class CursService {
             }
         }
         return 0;
-    }
-
-    public boolean proceseazaInscriere(int cursId, int membruId, boolean peListaAsteptare) {
-        List<Curs> cursuri = getAll();
-        Curs cursCautat = null;
-
-        // 1. Căutăm cursul dorit
-        for (Curs c : cursuri) {
-            if (c.getId() == cursId) {
-                cursCautat = c;
-                break;
-            }
-        }
-
-        if (cursCautat == null) return false; // Cursul nu există
-
-        // Inițializăm listele în caz că sunt null din JSON
-        if (cursCautat.getMembriInscrisiIds() == null) cursCautat.setMembriInscrisiIds(new java.util.ArrayList<>());
-        if (cursCautat.getListaAsteptareIds() == null) cursCautat.setListaAsteptareIds(new java.util.ArrayList<>());
-
-        // 2. Verificăm dacă membrul este deja înscris la acest curs (fie activ, fie pe lista de așteptare)
-        if (cursCautat.getMembriInscrisiIds().contains(membruId) || cursCautat.getListaAsteptareIds().contains(membruId)) {
-            return false; // Este deja înscris/înregistrat la curs
-        }
-
-        // 3. Procesăm înscrierea în funcție de locuri și de dorința utilizatorului
-        if (peListaAsteptare) {
-            cursCautat.getListaAsteptareIds().add(membruId);
-        } else {
-            // Verificare de siguranță: dacă între timp s-a ocupat cursul, îl refuzăm sau îl punem pe lista de așteptare
-            if (cursCautat.getInscrisi() >= cursCautat.getCapacitateMaxima()) {
-                return false; // Cursul s-a umplut!
-            }
-
-            cursCautat.getMembriInscrisiIds().add(membruId);
-            // Actualizăm numărul total de înscriși pentru a fi randat corect pe frontend
-            cursCautat.setInscrisi(cursCautat.getMembriInscrisiIds().size());
-        }
-
-        // 4. Actualizăm și profilul Membrului (în membri.json) pentru a avea istoricul cursurilor lui
-        List<Membru> membri = JsonStorage.read("membri", Membru.class);
-        for (Membru m : membri) {
-            if (m.getId() == membruId) {
-                if (m.getCursuriInscriseIds() == null) m.setCursuriInscriseIds(new java.util.ArrayList<>());
-                m.getCursuriInscriseIds().add(cursId);
-                break;
-            }
-        }
-
-        // 5. Salvăm ambele fișiere JSON înapoi pe hard disk
-        JsonStorage.write(FILE, cursuri);
-        JsonStorage.write("membri", membri);
-
-        return true;
     }
 }

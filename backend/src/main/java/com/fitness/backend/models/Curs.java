@@ -11,9 +11,8 @@ public class Curs {
     private String ora;
     private int capacitateMaxima;
     private int inscrisi;
-
-    private List<Integer> membriInscrisiIds = new ArrayList<>();
-    private List<Integer> listaAsteptareIds = new ArrayList<>();
+    private List<Integer> membriInscrisi = new ArrayList<>();
+    private List<Integer> waitingList = new ArrayList<>();
 
     public Curs() {}
 
@@ -38,15 +37,9 @@ public class Curs {
     public int getInscrisi() { return inscrisi; }
     public void setInscrisi(int inscrisi) { this.inscrisi = inscrisi; }
 
-    public List<Integer> getMembriInscrisiIds() {
-        if (this.membriInscrisiIds == null) this.membriInscrisiIds = new ArrayList<>();
-        return membriInscrisiIds;
-    }
-    public void setMembriInscrisiIds(List<Integer> membriInscrisiIds) { this.membriInscrisiIds = membriInscrisiIds; }
+    public List<Integer> getMembriInscrisi() { return membriInscrisi; }
+    public void setMembriInscrisi(List<Integer> membriInscrisi) { this.membriInscrisi = membriInscrisi; }
 
-    public List<Integer> getListaAsteptareIds() {
-        if (this.listaAsteptareIds == null) this.listaAsteptareIds = new ArrayList<>();
-        return listaAsteptareIds;
-    }
-    public void setListaAsteptareIds(List<Integer> listaAsteptareIds) { this.listaAsteptareIds = listaAsteptareIds; }
+    public List<Integer> getWaitingList() { return waitingList; }
+    public void setWaitingList(List<Integer> waitingList) { this.waitingList = waitingList; }
 }

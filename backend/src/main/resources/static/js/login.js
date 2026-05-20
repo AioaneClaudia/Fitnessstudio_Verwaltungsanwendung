@@ -17,6 +17,7 @@ async function login() {
 
     if (data.status === 'ok') {
         localStorage.setItem('user', JSON.stringify({
+            id: parseInt(data.id),
             nume: data.nume,
             rol: data.rol
         }));

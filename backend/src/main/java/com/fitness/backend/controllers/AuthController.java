@@ -24,12 +24,11 @@ public class AuthController {
         for (User u : users) {
             if (u.getEmail().equals(email) && u.getParola().equals(parola)) {
                 // Returnăm toate datele importante, inclusiv ID-ul ca String
-                return Map.of(
-                        "status", "ok",
-                        "id", String.valueOf(u.getId()),
-                        "nume", u.getNume(),
-                        "email", u.getEmail(),
-                        "rol", u.getRol()
+               return Map.of(
+                "status", "ok",
+                "nume", u.getNume(),
+                "rol", u.getRol(),
+                "id", String.valueOf(u.getId())
                 );
             }
         }

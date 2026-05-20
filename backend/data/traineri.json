@@ -16,4 +16,10 @@
   "specializare" : "pilates",
   "email" : "andreealdea13@gmail.com",
   "telefon" : "0962617437"
+}, {
+  "id" : 10,
+  "nume" : "Ion Popescu",
+  "specializare" : null,
+  "email" : null,
+  "telefon" : null
 } ]

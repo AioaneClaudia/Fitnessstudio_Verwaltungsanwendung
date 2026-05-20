@@ -1,11 +1,21 @@
 [ {
   "id" : 1,
-  "nume" : "Baze de date",
+  "nume" : "Yoga",
+  "trainerId" : 8,
+  "zi" : "Vineri",
+  "ora" : "13:20",
+  "capacitateMaxima" : 12,
+  "inscrisi" : 2,
+  "membriInscrisi" : [ 4, 6 ],
+  "waitingList" : [ ]
+}, {
+  "id" : 2,
+  "nume" : "Box",
   "trainerId" : 1,
-  "zi" : "Joi",
+  "zi" : "Marți",
   "ora" : "12:22",
-  "capacitateMaxima" : 33,
+  "capacitateMaxima" : 22,
   "inscrisi" : 0,
-  "membriInscrisiIds" : [ 7 ],
-  "listaAsteptareIds" : [ ]
+  "membriInscrisi" : [ ],
+  "waitingList" : [ ]
 } ]

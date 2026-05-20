@@ -52,4 +52,10 @@
   "email" : "andreealdea13@gmail.com",
   "parola" : "Andreea.13",
   "rol" : "trainer"
+}, {
+  "id" : 10,
+  "nume" : "Ion Popescu",
+  "email" : "ionpopescu@gmail.com",
+  "parola" : "Ionpop123",
+  "rol" : "trainer"
 } ]
