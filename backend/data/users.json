@@ -1,1252 +1,1126 @@
-[
-  {
-    "id": 1,
-    "nume": "Admin Principal",
-    "email": "admin@fitness.com",
-    "parola": "admin123",
-    "rol": "admin",
-    "dataInregistrare": "2024-01-01",
-    "telefon": "",
-    "adresa": ""
-  },
-  {
-    "id": 2,
-    "nume": "Trainer Ion",
-    "email": "trainer@fitness.com",
-    "parola": "trainer123",
-    "rol": "trainer",
-    "dataInregistrare": "2024-01-01",
-    "telefon": "",
-    "adresa": ""
-  },
-  {
-    "id": 3,
-    "nume": "David Andrus",
-    "email": "davidandrua@gmail.com",
-    "parola": "David05",
-    "rol": "membru",
-    "dataInregistrare": "2024-01-15",
-    "telefon": "0722111222",
-    "adresa": ""
-  },
-  {
-    "id": 4,
-    "nume": "Diana Dumitru",
-    "email": "diana.dumitru46@yahoo.com",
-    "parola": "Diana123",
-    "rol": "membru",
-    "dataInregistrare": "2024-05-10",
-    "telefon": "0774676742",
-    "adresa": ""
-  },
-  {
-    "id": 5,
-    "nume": "Andreea Aldea",
-    "email": "andreea.aldea@gmail.com",
-    "parola": "123456",
-    "rol": "membru",
-    "dataInregistrare": "2024-02-20",
-    "telefon": "0733222333",
-    "adresa": ""
-  },
-  {
-    "id": 6,
-    "nume": "Paul Nistor",
-    "email": "raulnistor008@gmail.com",
-    "parola": "Paul123",
-    "rol": "membru",
-    "dataInregistrare": "2024-03-10",
-    "telefon": "078432321",
-    "adresa": "Crinului 13"
-  },
-  {
-    "id": 7,
-    "nume": "Crucin Patricia",
-    "email": "crucin.patricia@yahoo.com",
-    "parola": "1234567",
-    "rol": "membru",
-    "dataInregistrare": "2024-04-05",
-    "telefon": "",
-    "adresa": ""
-  },
-  {
-    "id": 8,
-    "nume": "Crucin Anya",
-    "email": "crucin.anya@yahoo.com",
-    "parola": "anyapatri",
-    "rol": "trainer",
-    "dataInregistrare": "2024-01-01",
-    "telefon": "0737823723",
-    "adresa": ""
-  },
-  {
-    "id": 9,
-    "nume": "Andreea Aldea",
-    "email": "andreealdea13@gmail.com",
-    "parola": "Andreea.13",
-    "rol": "trainer",
-    "dataInregistrare": "2024-01-01",
-    "telefon": "0962617437",
-    "adresa": ""
-  },
-  {
-    "id": 10,
-    "nume": "David Dinu",
-    "email": "david.dinu73@yahoo.com",
-    "parola": "David123",
-    "rol": "membru",
-    "dataInregistrare": "2024-11-24",
-    "telefon": "0720639031",
-    "adresa": ""
-  },
-  {
-    "id": 11,
-    "nume": "Cristina Georgescu",
-    "email": "cristina.georgescu26@outlook.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2023-01-27",
-    "telefon": "0710219861",
-    "adresa": ""
-  },
-  {
-    "id": 12,
-    "nume": "Ovidiu Andrus",
-    "email": "ovidiu.andrus@gmail.com",
-    "parola": "Ovi679",
-    "rol": "membru",
-    "dataInregistrare": "2026-05-20",
-    "telefon": "0743247328",
-    "adresa": "Lalelelor"
-  },
-  {
-    "id": 13,
-    "nume": "Radu Olaru",
-    "email": "radu.olaru11@yahoo.com",
-    "parola": "Radu123",
-    "rol": "membru",
-    "dataInregistrare": "2022-12-21",
-    "telefon": "0712140015",
-    "adresa": ""
-  },
-  {
-    "id": 14,
-    "nume": "George Olaru",
-    "email": "george.olaru85@yahoo.com",
-    "parola": "George123",
-    "rol": "membru",
-    "dataInregistrare": "2022-03-02",
-    "telefon": "0745952271",
-    "adresa": ""
-  },
-  {
-    "id": 15,
-    "nume": "Patricia Niculescu",
-    "email": "patricia.niculescu61@yahoo.com",
-    "parola": "Patricia123",
-    "rol": "membru",
-    "dataInregistrare": "2023-06-07",
-    "telefon": "0784236189",
-    "adresa": ""
-  },
-  {
-    "id": 16,
-    "nume": "David Georgescu",
-    "email": "david.georgescu55@outlook.com",
-    "parola": "David123",
-    "rol": "membru",
-    "dataInregistrare": "2024-08-04",
-    "telefon": "0712212518",
-    "adresa": ""
-  },
-  {
-    "id": 17,
-    "nume": "Alexandru Barbu",
-    "email": "alexandru.barbu95@outlook.com",
-    "parola": "Alexandru123",
-    "rol": "membru",
-    "dataInregistrare": "2022-07-09",
-    "telefon": "0752585644",
-    "adresa": ""
-  },
-  {
-    "id": 18,
-    "nume": "George Marinescu",
-    "email": "george.marinescu47@gmail.com",
-    "parola": "George123",
-    "rol": "membru",
-    "dataInregistrare": "2024-10-11",
-    "telefon": "0723245848",
-    "adresa": ""
-  },
-  {
-    "id": 19,
-    "nume": "Catalin Roman",
-    "email": "catalin.roman9@gmail.com",
-    "parola": "Catalin123",
-    "rol": "membru",
-    "dataInregistrare": "2022-01-12",
-    "telefon": "0738466036",
-    "adresa": ""
-  },
-  {
-    "id": 20,
-    "nume": "Gabriela Marinescu",
-    "email": "gabriela.marinescu51@outlook.com",
-    "parola": "Gabriela123",
-    "rol": "membru",
-    "dataInregistrare": "2023-05-14",
-    "telefon": "0790929020",
-    "adresa": ""
-  },
-  {
-    "id": 21,
-    "nume": "Cristian Tudor",
-    "email": "cristian.tudor85@gmail.com",
-    "parola": "Cristian123",
-    "rol": "membru",
-    "dataInregistrare": "2022-03-22",
-    "telefon": "0720723368",
-    "adresa": ""
-  },
-  {
-    "id": 22,
-    "nume": "Cristina Munteanu",
-    "email": "cristina.munteanu24@yahoo.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2023-11-29",
-    "telefon": "0748348309",
-    "adresa": ""
-  },
-  {
-    "id": 23,
-    "nume": "Cristina Marinescu",
-    "email": "cristina.marinescu86@yahoo.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2025-11-24",
-    "telefon": "0787225118",
-    "adresa": ""
-  },
-  {
-    "id": 24,
-    "nume": "Ioana Ciobanu",
-    "email": "ioana.ciobanu89@yahoo.com",
-    "parola": "Ioana123",
-    "rol": "membru",
-    "dataInregistrare": "2022-11-09",
-    "telefon": "0721467013",
-    "adresa": ""
-  },
-  {
-    "id": 25,
-    "nume": "Daniel Mihai",
-    "email": "daniel.mihai67@yahoo.com",
-    "parola": "Daniel123",
-    "rol": "membru",
-    "dataInregistrare": "2025-12-02",
-    "telefon": "0740885322",
-    "adresa": ""
-  },
-  {
-    "id": 26,
-    "nume": "Ioana Popa",
-    "email": "ioana.popa64@yahoo.com",
-    "parola": "Ioana123",
-    "rol": "membru",
-    "dataInregistrare": "2025-05-07",
-    "telefon": "0722917264",
-    "adresa": ""
-  },
-  {
-    "id": 27,
-    "nume": "Paul Munteanu",
-    "email": "paul.munteanu74@outlook.com",
-    "parola": "Paul123",
-    "rol": "membru",
-    "dataInregistrare": "2023-09-02",
-    "telefon": "0741626262",
-    "adresa": ""
-  },
-  {
-    "id": 28,
-    "nume": "Valentina Andrus",
-    "email": "valentina.andrus27@gmail.com",
-    "parola": "Valentina123",
-    "rol": "membru",
-    "dataInregistrare": "2024-02-08",
-    "telefon": "0792819778",
-    "adresa": ""
-  },
-  {
-    "id": 29,
-    "nume": "Andrei Marinescu",
-    "email": "andrei.marinescu74@outlook.com",
-    "parola": "Andrei123",
-    "rol": "membru",
-    "dataInregistrare": "2023-04-16",
-    "telefon": "0790736308",
-    "adresa": ""
-  },
-  {
-    "id": 30,
-    "nume": "Florin Dumitru",
-    "email": "florin.dumitru91@yahoo.com",
-    "parola": "Florin123",
-    "rol": "membru",
-    "dataInregistrare": "2024-03-03",
-    "telefon": "0762331361",
-    "adresa": ""
-  },
-  {
-    "id": 31,
-    "nume": "Alexandru Georgescu",
-    "email": "alexandru.georgescu76@yahoo.com",
-    "parola": "Alexandru123",
-    "rol": "membru",
-    "dataInregistrare": "2024-07-11",
-    "telefon": "0732516451",
-    "adresa": ""
-  },
-  {
-    "id": 32,
-    "nume": "Gabriel Georgescu",
-    "email": "gabriel.georgescu3@yahoo.com",
-    "parola": "Gabriel123",
-    "rol": "membru",
-    "dataInregistrare": "2026-02-02",
-    "telefon": "0790655211",
-    "adresa": ""
-  },
-  {
-    "id": 33,
-    "nume": "Simona Popescu",
-    "email": "simona.popescu63@yahoo.com",
-    "parola": "Simona123",
-    "rol": "membru",
-    "dataInregistrare": "2022-01-26",
-    "telefon": "0748848431",
-    "adresa": ""
-  },
-  {
-    "id": 34,
-    "nume": "Vlad Serban",
-    "email": "vlad.serban13@yahoo.com",
-    "parola": "Vlad123",
-    "rol": "membru",
-    "dataInregistrare": "2024-02-22",
-    "telefon": "0733184353",
-    "adresa": ""
-  },
-  {
-    "id": 35,
-    "nume": "Emil Olaru",
-    "email": "emil.olaru83@outlook.com",
-    "parola": "Emil123",
-    "rol": "membru",
-    "dataInregistrare": "2024-08-26",
-    "telefon": "0766751608",
-    "adresa": ""
-  },
-  {
-    "id": 36,
-    "nume": "Laura Tudor",
-    "email": "laura.tudor7@gmail.com",
-    "parola": "Laura123",
-    "rol": "membru",
-    "dataInregistrare": "2022-03-17",
-    "telefon": "0756997720",
-    "adresa": ""
-  },
-  {
-    "id": 37,
-    "nume": "David Munteanu",
-    "email": "david.munteanu17@gmail.com",
-    "parola": "David123",
-    "rol": "membru",
-    "dataInregistrare": "2024-01-31",
-    "telefon": "0778321123",
-    "adresa": ""
-  },
-  {
-    "id": 38,
-    "nume": "Stefan Marinescu",
-    "email": "stefan.marinescu25@gmail.com",
-    "parola": "Stefan123",
-    "rol": "membru",
-    "dataInregistrare": "2024-08-06",
-    "telefon": "0734178450",
-    "adresa": ""
-  },
-  {
-    "id": 39,
-    "nume": "Ioana Petrescu",
-    "email": "ioana.petrescu63@outlook.com",
-    "parola": "Ioana123",
-    "rol": "membru",
-    "dataInregistrare": "2022-10-21",
-    "telefon": "0762999400",
-    "adresa": ""
-  },
-  {
-    "id": 40,
-    "nume": "Valentina Andrus",
-    "email": "valentina.andrus48@yahoo.com",
-    "parola": "Valentina123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-18",
-    "telefon": "0729753177",
-    "adresa": ""
-  },
-  {
-    "id": 41,
-    "nume": "Stefan Popa",
-    "email": "stefan.popa64@yahoo.com",
-    "parola": "Stefan123",
-    "rol": "membru",
-    "dataInregistrare": "2023-04-06",
-    "telefon": "0739576982",
-    "adresa": ""
-  },
-  {
-    "id": 42,
-    "nume": "Ionut Dinu",
-    "email": "ionut.dinu12@outlook.com",
-    "parola": "Ionut123",
-    "rol": "membru",
-    "dataInregistrare": "2023-02-21",
-    "telefon": "0770946552",
-    "adresa": ""
-  },
-  {
-    "id": 43,
-    "nume": "Cristina Barbu",
-    "email": "cristina.barbu63@yahoo.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2022-04-13",
-    "telefon": "0737656292",
-    "adresa": ""
-  },
-  {
-    "id": 44,
-    "nume": "Gabriel Radu",
-    "email": "gabriel.radu7@gmail.com",
-    "parola": "Gabriel123",
-    "rol": "membru",
-    "dataInregistrare": "2022-01-17",
-    "telefon": "0730586324",
-    "adresa": ""
-  },
-  {
-    "id": 45,
-    "nume": "Paul Popa",
-    "email": "paul.popa69@yahoo.com",
-    "parola": "Paul123",
-    "rol": "membru",
-    "dataInregistrare": "2025-04-20",
-    "telefon": "0749255582",
-    "adresa": ""
-  },
-  {
-    "id": 46,
-    "nume": "Ioana Ciobanu",
-    "email": "ioana.ciobanu47@outlook.com",
-    "parola": "Ioana123",
-    "rol": "membru",
-    "dataInregistrare": "2022-03-03",
-    "telefon": "0750523084",
-    "adresa": ""
-  },
-  {
-    "id": 47,
-    "nume": "Vlad Serban",
-    "email": "vlad.serban70@yahoo.com",
-    "parola": "Vlad123",
-    "rol": "membru",
-    "dataInregistrare": "2025-03-24",
-    "telefon": "0770418930",
-    "adresa": ""
-  },
-  {
-    "id": 48,
-    "nume": "Radu Oprea",
-    "email": "radu.oprea10@gmail.com",
-    "parola": "Radu123",
-    "rol": "membru",
-    "dataInregistrare": "2024-06-29",
-    "telefon": "0739599891",
-    "adresa": ""
-  },
-  {
-    "id": 49,
-    "nume": "Octavian Niculescu",
-    "email": "octavian.niculescu20@gmail.com",
-    "parola": "Octavian123",
-    "rol": "membru",
-    "dataInregistrare": "2026-01-22",
-    "telefon": "0768609359",
-    "adresa": ""
-  },
-  {
-    "id": 50,
-    "nume": "Radu Munteanu",
-    "email": "radu.munteanu25@gmail.com",
-    "parola": "Radu123",
-    "rol": "membru",
-    "dataInregistrare": "2023-06-06",
-    "telefon": "0738916943",
-    "adresa": ""
-  },
-  {
-    "id": 51,
-    "nume": "Bogdan Vasilescu",
-    "email": "bogdan.vasilescu69@gmail.com",
-    "parola": "Bogdan123",
-    "rol": "membru",
-    "dataInregistrare": "2024-11-13",
-    "telefon": "0764764481",
-    "adresa": ""
-  },
-  {
-    "id": 52,
-    "nume": "Sebastian Barbu",
-    "email": "sebastian.barbu47@yahoo.com",
-    "parola": "Sebastian123",
-    "rol": "membru",
-    "dataInregistrare": "2024-05-07",
-    "telefon": "0758312312",
-    "adresa": ""
-  },
-  {
-    "id": 53,
-    "nume": "Sebastian Popa",
-    "email": "sebastian.popa98@yahoo.com",
-    "parola": "Sebastian123",
-    "rol": "membru",
-    "dataInregistrare": "2022-07-28",
-    "telefon": "0728318272",
-    "adresa": ""
-  },
-  {
-    "id": 54,
-    "nume": "Raluca Moldovan",
-    "email": "raluca.moldovan39@gmail.com",
-    "parola": "Raluca123",
-    "rol": "membru",
-    "dataInregistrare": "2024-04-02",
-    "telefon": "0762705791",
-    "adresa": ""
-  },
-  {
-    "id": 55,
-    "nume": "Mihai Niculescu",
-    "email": "mihai.niculescu85@outlook.com",
-    "parola": "Mihai123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-08",
-    "telefon": "0731280935",
-    "adresa": ""
-  },
-  {
-    "id": 56,
-    "nume": "Patricia Andrus",
-    "email": "patricia.andrus33@gmail.com",
-    "parola": "Patricia123",
-    "rol": "membru",
-    "dataInregistrare": "2024-09-12",
-    "telefon": "0736616233",
-    "adresa": ""
-  },
-  {
-    "id": 57,
-    "nume": "Marian Lungu",
-    "email": "marian.lungu67@gmail.com",
-    "parola": "Marian123",
-    "rol": "membru",
-    "dataInregistrare": "2022-07-08",
-    "telefon": "0799512448",
-    "adresa": ""
-  },
-  {
-    "id": 58,
-    "nume": "Nicolae Dinu",
-    "email": "nicolae.dinu6@gmail.com",
-    "parola": "Nicolae123",
-    "rol": "membru",
-    "dataInregistrare": "2026-01-21",
-    "telefon": "0749602317",
-    "adresa": ""
-  },
-  {
-    "id": 59,
-    "nume": "Ana Stoica",
-    "email": "ana.stoica94@gmail.com",
-    "parola": "Ana123",
-    "rol": "membru",
-    "dataInregistrare": "2022-01-02",
-    "telefon": "0727852878",
-    "adresa": ""
-  },
-  {
-    "id": 60,
-    "nume": "Razvan Vasilescu",
-    "email": "razvan.vasilescu80@gmail.com",
-    "parola": "Razvan123",
-    "rol": "membru",
-    "dataInregistrare": "2022-12-28",
-    "telefon": "0782587575",
-    "adresa": ""
-  },
-  {
-    "id": 61,
-    "nume": "Valentina Tudor",
-    "email": "valentina.tudor41@gmail.com",
-    "parola": "Valentina123",
-    "rol": "membru",
-    "dataInregistrare": "2023-12-13",
-    "telefon": "0796706121",
-    "adresa": ""
-  },
-  {
-    "id": 62,
-    "nume": "Mihai Niculescu",
-    "email": "mihai.niculescu90@gmail.com",
-    "parola": "Mihai123",
-    "rol": "membru",
-    "dataInregistrare": "2024-12-23",
-    "telefon": "0715547060",
-    "adresa": ""
-  },
-  {
-    "id": 63,
-    "nume": "Luminita Nistor",
-    "email": "luminita.nistor32@yahoo.com",
-    "parola": "Luminita123",
-    "rol": "membru",
-    "dataInregistrare": "2025-11-30",
-    "telefon": "0794574166",
-    "adresa": ""
-  },
-  {
-    "id": 64,
-    "nume": "Iulian Olaru",
-    "email": "iulian.olaru64@yahoo.com",
-    "parola": "Iulian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-02-01",
-    "telefon": "0734974460",
-    "adresa": ""
-  },
-  {
-    "id": 65,
-    "nume": "Ionut Ciobanu",
-    "email": "ionut.ciobanu74@yahoo.com",
-    "parola": "Ionut123",
-    "rol": "membru",
-    "dataInregistrare": "2023-01-10",
-    "telefon": "0726455196",
-    "adresa": ""
-  },
-  {
-    "id": 66,
-    "nume": "Ionut Popescu",
-    "email": "ionut.popescu83@gmail.com",
-    "parola": "Ionut123",
-    "rol": "membru",
-    "dataInregistrare": "2023-11-02",
-    "telefon": "0767633966",
-    "adresa": ""
-  },
-  {
-    "id": 67,
-    "nume": "Andrei Marinescu",
-    "email": "andrei.marinescu34@yahoo.com",
-    "parola": "Andrei123",
-    "rol": "membru",
-    "dataInregistrare": "2022-06-25",
-    "telefon": "0763149166",
-    "adresa": ""
-  },
-  {
-    "id": 68,
-    "nume": "Mihaela Stoica",
-    "email": "mihaela.stoica70@outlook.com",
-    "parola": "Mihaela123",
-    "rol": "membru",
-    "dataInregistrare": "2023-06-20",
-    "telefon": "0756333051",
-    "adresa": ""
-  },
-  {
-    "id": 69,
-    "nume": "Cristina Olaru",
-    "email": "cristina.olaru57@outlook.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2024-09-21",
-    "telefon": "0769571228",
-    "adresa": ""
-  },
-  {
-    "id": 70,
-    "nume": "Adrian Niculescu",
-    "email": "adrian.niculescu6@outlook.com",
-    "parola": "Adrian123",
-    "rol": "membru",
-    "dataInregistrare": "2022-07-06",
-    "telefon": "0711508042",
-    "adresa": ""
-  },
-  {
-    "id": 71,
-    "nume": "Patricia Radu",
-    "email": "patricia.radu7@yahoo.com",
-    "parola": "Patricia123",
-    "rol": "membru",
-    "dataInregistrare": "2022-03-21",
-    "telefon": "0752661002",
-    "adresa": ""
-  },
-  {
-    "id": 72,
-    "nume": "Alexandru Vlad",
-    "email": "alexandru.vlad4@outlook.com",
-    "parola": "Alexandru123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-19",
-    "telefon": "0749485959",
-    "adresa": ""
-  },
-  {
-    "id": 73,
-    "nume": "Iulian Matei",
-    "email": "iulian.matei88@outlook.com",
-    "parola": "Iulian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-01-19",
-    "telefon": "0745622486",
-    "adresa": ""
-  },
-  {
-    "id": 74,
-    "nume": "Cristian Petrescu",
-    "email": "cristian.petrescu83@outlook.com",
-    "parola": "Cristian123",
-    "rol": "membru",
-    "dataInregistrare": "2025-11-07",
-    "telefon": "0739191340",
-    "adresa": ""
-  },
-  {
-    "id": 75,
-    "nume": "Luminita Stan",
-    "email": "luminita.stan40@gmail.com",
-    "parola": "Luminita123",
-    "rol": "membru",
-    "dataInregistrare": "2022-12-13",
-    "telefon": "0794839201",
-    "adresa": ""
-  },
-  {
-    "id": 76,
-    "nume": "Marius Roman",
-    "email": "marius.roman96@gmail.com",
-    "parola": "Marius123",
-    "rol": "membru",
-    "dataInregistrare": "2023-02-04",
-    "telefon": "0743619108",
-    "adresa": ""
-  },
-  {
-    "id": 77,
-    "nume": "Luminita Ciobanu",
-    "email": "luminita.ciobanu72@yahoo.com",
-    "parola": "Luminita123",
-    "rol": "membru",
-    "dataInregistrare": "2023-11-15",
-    "telefon": "0726455954",
-    "adresa": ""
-  },
-  {
-    "id": 78,
-    "nume": "Teodora Constantin",
-    "email": "teodora.constantin80@gmail.com",
-    "parola": "Teodora123",
-    "rol": "membru",
-    "dataInregistrare": "2022-08-28",
-    "telefon": "0776954598",
-    "adresa": ""
-  },
-  {
-    "id": 79,
-    "nume": "Tudor Olaru",
-    "email": "tudor.olaru71@gmail.com",
-    "parola": "Tudor123",
-    "rol": "membru",
-    "dataInregistrare": "2025-02-14",
-    "telefon": "0791986718",
-    "adresa": ""
-  },
-  {
-    "id": 80,
-    "nume": "Gabriela Matei",
-    "email": "gabriela.matei77@gmail.com",
-    "parola": "Gabriela123",
-    "rol": "membru",
-    "dataInregistrare": "2025-04-01",
-    "telefon": "0754370588",
-    "adresa": ""
-  },
-  {
-    "id": 81,
-    "nume": "Adrian Andrus",
-    "email": "adrian.andrus35@outlook.com",
-    "parola": "Adrian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-03-21",
-    "telefon": "0777948317",
-    "adresa": ""
-  },
-  {
-    "id": 82,
-    "nume": "Valentina Roman",
-    "email": "valentina.roman80@yahoo.com",
-    "parola": "Valentina123",
-    "rol": "membru",
-    "dataInregistrare": "2022-05-27",
-    "telefon": "0746441130",
-    "adresa": ""
-  },
-  {
-    "id": 83,
-    "nume": "Gabriela Moldovan",
-    "email": "gabriela.moldovan40@yahoo.com",
-    "parola": "Gabriela123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-09",
-    "telefon": "0748429121",
-    "adresa": ""
-  },
-  {
-    "id": 84,
-    "nume": "Alexandru Marinescu",
-    "email": "alexandru.marinescu71@gmail.com",
-    "parola": "Alexandru123",
-    "rol": "membru",
-    "dataInregistrare": "2025-05-15",
-    "telefon": "0754207233",
-    "adresa": ""
-  },
-  {
-    "id": 85,
-    "nume": "Diana Olaru",
-    "email": "diana.olaru33@gmail.com",
-    "parola": "Diana123",
-    "rol": "membru",
-    "dataInregistrare": "2025-11-20",
-    "telefon": "0730155922",
-    "adresa": ""
-  },
-  {
-    "id": 86,
-    "nume": "Oana Serban",
-    "email": "oana.serban85@yahoo.com",
-    "parola": "Oana123",
-    "rol": "membru",
-    "dataInregistrare": "2022-09-01",
-    "telefon": "0742739878",
-    "adresa": ""
-  },
-  {
-    "id": 87,
-    "nume": "Valentina Dinu",
-    "email": "valentina.dinu99@yahoo.com",
-    "parola": "Valentina123",
-    "rol": "membru",
-    "dataInregistrare": "2022-12-22",
-    "telefon": "0741904096",
-    "adresa": ""
-  },
-  {
-    "id": 88,
-    "nume": "Lucian Stan",
-    "email": "lucian.stan84@yahoo.com",
-    "parola": "Lucian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-03",
-    "telefon": "0757354155",
-    "adresa": ""
-  },
-  {
-    "id": 89,
-    "nume": "Florin Mihai",
-    "email": "florin.mihai41@gmail.com",
-    "parola": "Florin123",
-    "rol": "membru",
-    "dataInregistrare": "2023-04-07",
-    "telefon": "0772446314",
-    "adresa": ""
-  },
-  {
-    "id": 90,
-    "nume": "Adrian Oprea",
-    "email": "adrian.oprea96@yahoo.com",
-    "parola": "Adrian123",
-    "rol": "membru",
-    "dataInregistrare": "2025-12-20",
-    "telefon": "0769117917",
-    "adresa": ""
-  },
-  {
-    "id": 91,
-    "nume": "Ana Ionescu",
-    "email": "ana.ionescu40@yahoo.com",
-    "parola": "Ana123",
-    "rol": "membru",
-    "dataInregistrare": "2025-11-21",
-    "telefon": "0768646915",
-    "adresa": ""
-  },
-  {
-    "id": 92,
-    "nume": "Octavian Florea",
-    "email": "octavian.florea35@gmail.com",
-    "parola": "Octavian123",
-    "rol": "membru",
-    "dataInregistrare": "2025-04-17",
-    "telefon": "0723214331",
-    "adresa": ""
-  },
-  {
-    "id": 93,
-    "nume": "Marian Ciobanu",
-    "email": "marian.ciobanu33@outlook.com",
-    "parola": "Marian123",
-    "rol": "membru",
-    "dataInregistrare": "2026-03-07",
-    "telefon": "0787492622",
-    "adresa": ""
-  },
-  {
-    "id": 94,
-    "nume": "Octavian Serban",
-    "email": "octavian.serban98@yahoo.com",
-    "parola": "Octavian123",
-    "rol": "membru",
-    "dataInregistrare": "2025-05-23",
-    "telefon": "0762920042",
-    "adresa": ""
-  },
-  {
-    "id": 95,
-    "nume": "Laurentiu Georgescu",
-    "email": "laurentiu.georgescu56@yahoo.com",
-    "parola": "Laurentiu123",
-    "rol": "membru",
-    "dataInregistrare": "2024-12-06",
-    "telefon": "0745221607",
-    "adresa": ""
-  },
-  {
-    "id": 96,
-    "nume": "Diana Popescu",
-    "email": "diana.popescu22@gmail.com",
-    "parola": "Diana123",
-    "rol": "membru",
-    "dataInregistrare": "2023-08-03",
-    "telefon": "0728676355",
-    "adresa": ""
-  },
-  {
-    "id": 97,
-    "nume": "Laurentiu Dinu",
-    "email": "laurentiu.dinu58@outlook.com",
-    "parola": "Laurentiu123",
-    "rol": "membru",
-    "dataInregistrare": "2023-09-23",
-    "telefon": "0744293042",
-    "adresa": ""
-  },
-  {
-    "id": 98,
-    "nume": "Simona Dinu",
-    "email": "simona.dinu11@yahoo.com",
-    "parola": "Simona123",
-    "rol": "membru",
-    "dataInregistrare": "2025-07-17",
-    "telefon": "0712925664",
-    "adresa": ""
-  },
-  {
-    "id": 99,
-    "nume": "Octavian Niculescu",
-    "email": "octavian.niculescu95@outlook.com",
-    "parola": "Octavian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-06-15",
-    "telefon": "0718760907",
-    "adresa": ""
-  },
-  {
-    "id": 100,
-    "nume": "Cristina Niculescu",
-    "email": "cristina.niculescu75@gmail.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2022-10-12",
-    "telefon": "0757256147",
-    "adresa": ""
-  },
-  {
-    "id": 101,
-    "nume": "Cristian Mihai",
-    "email": "cristian.mihai81@outlook.com",
-    "parola": "Cristian123",
-    "rol": "membru",
-    "dataInregistrare": "2024-01-25",
-    "telefon": "0712782982",
-    "adresa": ""
-  },
-  {
-    "id": 102,
-    "nume": "Andreea Dumitru",
-    "email": "andreea.dumitru76@gmail.com",
-    "parola": "Andreea123",
-    "rol": "membru",
-    "dataInregistrare": "2025-02-08",
-    "telefon": "0757226004",
-    "adresa": ""
-  },
-  {
-    "id": 103,
-    "nume": "Paul Mihai",
-    "email": "paul.mihai12@yahoo.com",
-    "parola": "Paul123",
-    "rol": "membru",
-    "dataInregistrare": "2022-09-26",
-    "telefon": "0776647185",
-    "adresa": ""
-  },
-  {
-    "id": 104,
-    "nume": "Florin Nistor",
-    "email": "florin.nistor9@yahoo.com",
-    "parola": "Florin123",
-    "rol": "membru",
-    "dataInregistrare": "2023-01-09",
-    "telefon": "0752103393",
-    "adresa": ""
-  },
-  {
-    "id": 105,
-    "nume": "Cristina Marinescu",
-    "email": "cristina.marinescu30@gmail.com",
-    "parola": "Cristina123",
-    "rol": "membru",
-    "dataInregistrare": "2023-10-13",
-    "telefon": "0718989236",
-    "adresa": ""
-  },
-  {
-    "id": 106,
-    "nume": "Marian Barbu",
-    "email": "marian.barbu14@gmail.com",
-    "parola": "Marian123",
-    "rol": "membru",
-    "dataInregistrare": "2023-09-04",
-    "telefon": "0726259250",
-    "adresa": ""
-  },
-  {
-    "id": 107,
-    "nume": "Emil Georgescu",
-    "email": "emil.georgescu40@gmail.com",
-    "parola": "Emil123",
-    "rol": "membru",
-    "dataInregistrare": "2022-11-21",
-    "telefon": "0722548271",
-    "adresa": ""
-  },
-  {
-    "id": 108,
-    "nume": "Mihai Ionescu",
-    "email": "mihai.ionescu@gmail.com",
-    "parola": "MihaiTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-03-01",
-    "telefon": "0721334455",
-    "adresa": ""
-  },
-  {
-    "id": 109,
-    "nume": "Laura Constantin",
-    "email": "laura.constantin@yahoo.com",
-    "parola": "LauraTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-04-15",
-    "telefon": "0733445566",
-    "adresa": ""
-  },
-  {
-    "id": 110,
-    "nume": "Bogdan Radu",
-    "email": "bogdan.radu@gmail.com",
-    "parola": "BogdanTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-06-10",
-    "telefon": "0744556677",
-    "adresa": ""
-  },
-  {
-    "id": 111,
-    "nume": "Simona Popa",
-    "email": "simona.popa@outlook.com",
-    "parola": "SimonaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-08-20",
-    "telefon": "0755667788",
-    "adresa": ""
-  },
-  {
-    "id": 112,
-    "nume": "Alexandru Munteanu",
-    "email": "alex.munteanu@gmail.com",
-    "parola": "AlexandruTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-09-05",
-    "telefon": "0766778899",
-    "adresa": ""
-  },
-  {
-    "id": 113,
-    "nume": "Raluca Georgescu",
-    "email": "raluca.georgescu@yahoo.com",
-    "parola": "RalucaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2024-01-10",
-    "telefon": "0777889900",
-    "adresa": ""
-  },
-  {
-    "id": 114,
-    "nume": "Cristian Dumitru",
-    "email": "cristian.dumitru@gmail.com",
-    "parola": "CristianTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-05-22",
-    "telefon": "0788990011",
-    "adresa": ""
-  },
-  {
-    "id": 115,
-    "nume": "Monica Vlad",
-    "email": "monica.vlad@yahoo.com",
-    "parola": "MonicaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-11-30",
-    "telefon": "0799001122",
-    "adresa": ""
-  },
-  {
-    "id": 116,
-    "nume": "Stefan Popescu",
-    "email": "stefan.popescu@gmail.com",
-    "parola": "StefanTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2024-02-14",
-    "telefon": "0710112233",
-    "adresa": ""
-  },
-  {
-    "id": 117,
-    "nume": "Diana Marinescu",
-    "email": "diana.marinescu@outlook.com",
-    "parola": "DianaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-07-08",
-    "telefon": "0721223344",
-    "adresa": ""
-  },
-  {
-    "id": 118,
-    "nume": "Andrei Stoica",
-    "email": "andrei.stoica@gmail.com",
-    "parola": "AndreiTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-04-19",
-    "telefon": "0732334455",
-    "adresa": ""
-  },
-  {
-    "id": 119,
-    "nume": "Elena Tudor",
-    "email": "elena.tudor@yahoo.com",
-    "parola": "ElenaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-10-01",
-    "telefon": "0743445566",
-    "adresa": ""
-  },
-  {
-    "id": 120,
-    "nume": "Florin Barbu",
-    "email": "florin.barbu@gmail.com",
-    "parola": "FlorinTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-08-25",
-    "telefon": "0754556677",
-    "adresa": ""
-  },
-  {
-    "id": 121,
-    "nume": "Ioana Nistor",
-    "email": "ioana.nistor@yahoo.com",
-    "parola": "IoanaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2024-03-18",
-    "telefon": "0765667788",
-    "adresa": ""
-  },
-  {
-    "id": 122,
-    "nume": "Gabriel Ciobanu",
-    "email": "gabriel.ciobanu@gmail.com",
-    "parola": "GabrielTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-01-30",
-    "telefon": "0776778899",
-    "adresa": ""
-  },
-  {
-    "id": 123,
-    "nume": "Patricia Lungu",
-    "email": "patricia.lungu@outlook.com",
-    "parola": "PatriciaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2022-12-05",
-    "telefon": "0787889900",
-    "adresa": ""
-  },
-  {
-    "id": 124,
-    "nume": "Razvan Matei",
-    "email": "razvan.matei@gmail.com",
-    "parola": "RazvanTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2023-09-12",
-    "telefon": "0798990011",
-    "adresa": ""
-  },
-  {
-    "id": 125,
-    "nume": "Valentina Serban",
-    "email": "valentina.serban@yahoo.com",
-    "parola": "ValentinaTrainer1",
-    "rol": "trainer",
-    "dataInregistrare": "2024-04-22",
-    "telefon": "0709001122",
-    "adresa": ""
-  }
-]
+[ {
+  "id" : 1,
+  "nume" : "Admin Principal",
+  "email" : "admin@fitness.com",
+  "parola" : "admin123",
+  "rol" : "admin",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
+}, {
+  "id" : 2,
+  "nume" : "Trainer Ion",
+  "email" : "trainer@fitness.com",
+  "parola" : "trainer123",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
+}, {
+  "id" : 3,
+  "nume" : "David Andrus",
+  "email" : "davidandrua@gmail.com",
+  "parola" : "David05",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-15",
+  "telefon" : "0722111222",
+  "adresa" : ""
+}, {
+  "id" : 4,
+  "nume" : "Diana Dumitru",
+  "email" : "diana.dumitru46@yahoo.com",
+  "parola" : "Diana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-05-10",
+  "telefon" : "0774676742",
+  "adresa" : ""
+}, {
+  "id" : 5,
+  "nume" : "Andreea Aldea",
+  "email" : "andreea.aldea@gmail.com",
+  "parola" : "123456",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-02-20",
+  "telefon" : "0733222333",
+  "adresa" : ""
+}, {
+  "id" : 6,
+  "nume" : "Paul Nistor",
+  "email" : "raulnistor008@gmail.com",
+  "parola" : "Paul123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-03-10",
+  "telefon" : "078432321",
+  "adresa" : "Crinului 13"
+}, {
+  "id" : 7,
+  "nume" : "Crucin Patricia",
+  "email" : "crucin.patricia@yahoo.com",
+  "parola" : "1234567",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-04-05",
+  "telefon" : "",
+  "adresa" : ""
+}, {
+  "id" : 8,
+  "nume" : "Crucin Anya",
+  "email" : "crucin.anya@yahoo.com",
+  "parola" : "anyapatri",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "0737823723",
+  "adresa" : ""
+}, {
+  "id" : 9,
+  "nume" : "Andreea Aldea",
+  "email" : "andreealdea13@gmail.com",
+  "parola" : "Andreea.13",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "0962617437",
+  "adresa" : ""
+}, {
+  "id" : 10,
+  "nume" : "David Dinu",
+  "email" : "david.dinu73@yahoo.com",
+  "parola" : "David123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-11-24",
+  "telefon" : "0720639031",
+  "adresa" : ""
+}, {
+  "id" : 11,
+  "nume" : "Cristina Georgescu",
+  "email" : "cristina.georgescu26@outlook.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-01-27",
+  "telefon" : "0710219861",
+  "adresa" : ""
+}, {
+  "id" : 12,
+  "nume" : "Ovidiu Andrus",
+  "email" : "ovidiu.andrus@gmail.com",
+  "parola" : "Ovi679",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-05-20",
+  "telefon" : "0743247328",
+  "adresa" : "Lalelelor"
+}, {
+  "id" : 13,
+  "nume" : "Radu Olaru",
+  "email" : "radu.olaru11@yahoo.com",
+  "parola" : "Radu123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-12-21",
+  "telefon" : "0712140015",
+  "adresa" : ""
+}, {
+  "id" : 14,
+  "nume" : "George Olaru",
+  "email" : "george.olaru85@yahoo.com",
+  "parola" : "George123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-03-02",
+  "telefon" : "0745952271",
+  "adresa" : ""
+}, {
+  "id" : 15,
+  "nume" : "Patricia Niculescu",
+  "email" : "patricia.niculescu61@yahoo.com",
+  "parola" : "Patricia123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-06-07",
+  "telefon" : "0784236189",
+  "adresa" : ""
+}, {
+  "id" : 16,
+  "nume" : "David Georgescu",
+  "email" : "david.georgescu55@outlook.com",
+  "parola" : "David123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-08-04",
+  "telefon" : "0712212518",
+  "adresa" : ""
+}, {
+  "id" : 17,
+  "nume" : "Alexandru Barbu",
+  "email" : "alexandru.barbu95@outlook.com",
+  "parola" : "Alexandru123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-07-09",
+  "telefon" : "0752585644",
+  "adresa" : ""
+}, {
+  "id" : 18,
+  "nume" : "George Marinescu",
+  "email" : "george.marinescu47@gmail.com",
+  "parola" : "George123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-10-11",
+  "telefon" : "0723245848",
+  "adresa" : ""
+}, {
+  "id" : 19,
+  "nume" : "Catalin Roman",
+  "email" : "catalin.roman9@gmail.com",
+  "parola" : "Catalin123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-01-12",
+  "telefon" : "0738466036",
+  "adresa" : ""
+}, {
+  "id" : 20,
+  "nume" : "Gabriela Marinescu",
+  "email" : "gabriela.marinescu51@outlook.com",
+  "parola" : "Gabriela123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-05-14",
+  "telefon" : "0790929020",
+  "adresa" : ""
+}, {
+  "id" : 21,
+  "nume" : "Cristian Tudor",
+  "email" : "cristian.tudor85@gmail.com",
+  "parola" : "Cristian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-03-22",
+  "telefon" : "0720723368",
+  "adresa" : ""
+}, {
+  "id" : 22,
+  "nume" : "Cristina Munteanu",
+  "email" : "cristina.munteanu24@yahoo.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-11-29",
+  "telefon" : "0748348309",
+  "adresa" : ""
+}, {
+  "id" : 23,
+  "nume" : "Cristina Marinescu",
+  "email" : "cristina.marinescu86@yahoo.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-11-24",
+  "telefon" : "0787225118",
+  "adresa" : ""
+}, {
+  "id" : 24,
+  "nume" : "Ioana Ciobanu",
+  "email" : "ioana.ciobanu89@yahoo.com",
+  "parola" : "Ioana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-11-09",
+  "telefon" : "0721467013",
+  "adresa" : ""
+}, {
+  "id" : 25,
+  "nume" : "Daniel Mihai",
+  "email" : "daniel.mihai67@yahoo.com",
+  "parola" : "Daniel123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-12-02",
+  "telefon" : "0740885322",
+  "adresa" : ""
+}, {
+  "id" : 26,
+  "nume" : "Ioana Popa",
+  "email" : "ioana.popa64@yahoo.com",
+  "parola" : "Ioana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-05-07",
+  "telefon" : "0722917264",
+  "adresa" : ""
+}, {
+  "id" : 27,
+  "nume" : "Paul Munteanu",
+  "email" : "paul.munteanu74@outlook.com",
+  "parola" : "Paul123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-09-02",
+  "telefon" : "0741626262",
+  "adresa" : ""
+}, {
+  "id" : 28,
+  "nume" : "Valentina Andrus",
+  "email" : "valentina.andrus27@gmail.com",
+  "parola" : "Valentina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-02-08",
+  "telefon" : "0792819778",
+  "adresa" : ""
+}, {
+  "id" : 29,
+  "nume" : "Andrei Marinescu",
+  "email" : "andrei.marinescu74@outlook.com",
+  "parola" : "Andrei123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-04-16",
+  "telefon" : "0790736308",
+  "adresa" : ""
+}, {
+  "id" : 30,
+  "nume" : "Florin Dumitru",
+  "email" : "florin.dumitru91@yahoo.com",
+  "parola" : "Florin123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-03-03",
+  "telefon" : "0762331361",
+  "adresa" : ""
+}, {
+  "id" : 31,
+  "nume" : "Alexandru Georgescu",
+  "email" : "alexandru.georgescu76@yahoo.com",
+  "parola" : "Alexandru123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-07-11",
+  "telefon" : "0732516451",
+  "adresa" : ""
+}, {
+  "id" : 32,
+  "nume" : "Gabriel Georgescu",
+  "email" : "gabriel.georgescu3@yahoo.com",
+  "parola" : "Gabriel123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-02-02",
+  "telefon" : "0790655211",
+  "adresa" : ""
+}, {
+  "id" : 33,
+  "nume" : "Simona Popescu",
+  "email" : "simona.popescu63@yahoo.com",
+  "parola" : "Simona123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-01-26",
+  "telefon" : "0748848431",
+  "adresa" : ""
+}, {
+  "id" : 34,
+  "nume" : "Vlad Serban",
+  "email" : "vlad.serban13@yahoo.com",
+  "parola" : "Vlad123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-02-22",
+  "telefon" : "0733184353",
+  "adresa" : ""
+}, {
+  "id" : 35,
+  "nume" : "Emil Olaru",
+  "email" : "emil.olaru83@outlook.com",
+  "parola" : "Emil123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-08-26",
+  "telefon" : "0766751608",
+  "adresa" : ""
+}, {
+  "id" : 36,
+  "nume" : "Laura Tudor",
+  "email" : "laura.tudor7@gmail.com",
+  "parola" : "Laura123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-03-17",
+  "telefon" : "0756997720",
+  "adresa" : ""
+}, {
+  "id" : 37,
+  "nume" : "David Munteanu",
+  "email" : "david.munteanu17@gmail.com",
+  "parola" : "David123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-31",
+  "telefon" : "0778321123",
+  "adresa" : ""
+}, {
+  "id" : 38,
+  "nume" : "Stefan Marinescu",
+  "email" : "stefan.marinescu25@gmail.com",
+  "parola" : "Stefan123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-08-06",
+  "telefon" : "0734178450",
+  "adresa" : ""
+}, {
+  "id" : 39,
+  "nume" : "Ioana Petrescu",
+  "email" : "ioana.petrescu63@outlook.com",
+  "parola" : "Ioana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-10-21",
+  "telefon" : "0762999400",
+  "adresa" : ""
+}, {
+  "id" : 40,
+  "nume" : "Valentina Andrus",
+  "email" : "valentina.andrus48@yahoo.com",
+  "parola" : "Valentina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-18",
+  "telefon" : "0729753177",
+  "adresa" : ""
+}, {
+  "id" : 41,
+  "nume" : "Stefan Popa",
+  "email" : "stefan.popa64@yahoo.com",
+  "parola" : "Stefan123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-04-06",
+  "telefon" : "0739576982",
+  "adresa" : ""
+}, {
+  "id" : 42,
+  "nume" : "Ionut Dinu",
+  "email" : "ionut.dinu12@outlook.com",
+  "parola" : "Ionut123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-02-21",
+  "telefon" : "0770946552",
+  "adresa" : ""
+}, {
+  "id" : 43,
+  "nume" : "Cristina Barbu",
+  "email" : "cristina.barbu63@yahoo.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-04-13",
+  "telefon" : "0737656292",
+  "adresa" : ""
+}, {
+  "id" : 44,
+  "nume" : "Gabriel Radu",
+  "email" : "gabriel.radu7@gmail.com",
+  "parola" : "Gabriel123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-01-17",
+  "telefon" : "0730586324",
+  "adresa" : ""
+}, {
+  "id" : 45,
+  "nume" : "Paul Popa",
+  "email" : "paul.popa69@yahoo.com",
+  "parola" : "Paul123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-04-20",
+  "telefon" : "0749255582",
+  "adresa" : ""
+}, {
+  "id" : 46,
+  "nume" : "Ioana Ciobanu",
+  "email" : "ioana.ciobanu47@outlook.com",
+  "parola" : "Ioana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-03-03",
+  "telefon" : "0750523084",
+  "adresa" : ""
+}, {
+  "id" : 47,
+  "nume" : "Vlad Serban",
+  "email" : "vlad.serban70@yahoo.com",
+  "parola" : "Vlad123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-03-24",
+  "telefon" : "0770418930",
+  "adresa" : ""
+}, {
+  "id" : 48,
+  "nume" : "Radu Oprea",
+  "email" : "radu.oprea10@gmail.com",
+  "parola" : "Radu123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-06-29",
+  "telefon" : "0739599891",
+  "adresa" : ""
+}, {
+  "id" : 49,
+  "nume" : "Octavian Niculescu",
+  "email" : "octavian.niculescu20@gmail.com",
+  "parola" : "Octavian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-01-22",
+  "telefon" : "0768609359",
+  "adresa" : ""
+}, {
+  "id" : 50,
+  "nume" : "Radu Munteanu",
+  "email" : "radu.munteanu25@gmail.com",
+  "parola" : "Radu123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-06-06",
+  "telefon" : "0738916943",
+  "adresa" : ""
+}, {
+  "id" : 51,
+  "nume" : "Bogdan Vasilescu",
+  "email" : "bogdan.vasilescu69@gmail.com",
+  "parola" : "Bogdan123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-11-13",
+  "telefon" : "0764764481",
+  "adresa" : ""
+}, {
+  "id" : 52,
+  "nume" : "Sebastian Barbu",
+  "email" : "sebastian.barbu47@yahoo.com",
+  "parola" : "Sebastian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-05-07",
+  "telefon" : "0758312312",
+  "adresa" : ""
+}, {
+  "id" : 53,
+  "nume" : "Sebastian Popa",
+  "email" : "sebastian.popa98@yahoo.com",
+  "parola" : "Sebastian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-07-28",
+  "telefon" : "0728318272",
+  "adresa" : ""
+}, {
+  "id" : 54,
+  "nume" : "Raluca Moldovan",
+  "email" : "raluca.moldovan39@gmail.com",
+  "parola" : "Raluca123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-04-02",
+  "telefon" : "0762705791",
+  "adresa" : ""
+}, {
+  "id" : 55,
+  "nume" : "Mihai Niculescu",
+  "email" : "mihai.niculescu85@outlook.com",
+  "parola" : "Mihai123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-08",
+  "telefon" : "0731280935",
+  "adresa" : ""
+}, {
+  "id" : 56,
+  "nume" : "Patricia Andrus",
+  "email" : "patricia.andrus33@gmail.com",
+  "parola" : "Patricia123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-09-12",
+  "telefon" : "0736616233",
+  "adresa" : ""
+}, {
+  "id" : 57,
+  "nume" : "Marian Lungu",
+  "email" : "marian.lungu67@gmail.com",
+  "parola" : "Marian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-07-08",
+  "telefon" : "0799512448",
+  "adresa" : ""
+}, {
+  "id" : 58,
+  "nume" : "Nicolae Dinu",
+  "email" : "nicolae.dinu6@gmail.com",
+  "parola" : "Nicolae123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-01-21",
+  "telefon" : "0749602317",
+  "adresa" : ""
+}, {
+  "id" : 59,
+  "nume" : "Ana Stoica",
+  "email" : "ana.stoica94@gmail.com",
+  "parola" : "Ana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-01-02",
+  "telefon" : "0727852878",
+  "adresa" : ""
+}, {
+  "id" : 60,
+  "nume" : "Razvan Vasilescu",
+  "email" : "razvan.vasilescu80@gmail.com",
+  "parola" : "Razvan123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-12-28",
+  "telefon" : "0782587575",
+  "adresa" : ""
+}, {
+  "id" : 61,
+  "nume" : "Valentina Tudor",
+  "email" : "valentina.tudor41@gmail.com",
+  "parola" : "Valentina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-12-13",
+  "telefon" : "0796706121",
+  "adresa" : ""
+}, {
+  "id" : 62,
+  "nume" : "Mihai Niculescu",
+  "email" : "mihai.niculescu90@gmail.com",
+  "parola" : "Mihai123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-12-23",
+  "telefon" : "0715547060",
+  "adresa" : ""
+}, {
+  "id" : 63,
+  "nume" : "Luminita Nistor",
+  "email" : "luminita.nistor32@yahoo.com",
+  "parola" : "Luminita123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-11-30",
+  "telefon" : "0794574166",
+  "adresa" : ""
+}, {
+  "id" : 64,
+  "nume" : "Iulian Olaru",
+  "email" : "iulian.olaru64@yahoo.com",
+  "parola" : "Iulian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-02-01",
+  "telefon" : "0734974460",
+  "adresa" : ""
+}, {
+  "id" : 65,
+  "nume" : "Ionut Ciobanu",
+  "email" : "ionut.ciobanu74@yahoo.com",
+  "parola" : "Ionut123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-01-10",
+  "telefon" : "0726455196",
+  "adresa" : ""
+}, {
+  "id" : 66,
+  "nume" : "Ionut Popescu",
+  "email" : "ionut.popescu83@gmail.com",
+  "parola" : "Ionut123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-11-02",
+  "telefon" : "0767633966",
+  "adresa" : ""
+}, {
+  "id" : 67,
+  "nume" : "Andrei Marinescu",
+  "email" : "andrei.marinescu34@yahoo.com",
+  "parola" : "Andrei123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-06-25",
+  "telefon" : "0763149166",
+  "adresa" : ""
+}, {
+  "id" : 68,
+  "nume" : "Mihaela Stoica",
+  "email" : "mihaela.stoica70@outlook.com",
+  "parola" : "Mihaela123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-06-20",
+  "telefon" : "0756333051",
+  "adresa" : ""
+}, {
+  "id" : 69,
+  "nume" : "Cristina Olaru",
+  "email" : "cristina.olaru57@outlook.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-09-21",
+  "telefon" : "0769571228",
+  "adresa" : ""
+}, {
+  "id" : 70,
+  "nume" : "Adrian Niculescu",
+  "email" : "adrian.niculescu6@outlook.com",
+  "parola" : "Adrian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-07-06",
+  "telefon" : "0711508042",
+  "adresa" : ""
+}, {
+  "id" : 71,
+  "nume" : "Patricia Radu",
+  "email" : "patricia.radu7@yahoo.com",
+  "parola" : "Patricia123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-03-21",
+  "telefon" : "0752661002",
+  "adresa" : ""
+}, {
+  "id" : 72,
+  "nume" : "Alexandru Vlad",
+  "email" : "alexandru.vlad4@outlook.com",
+  "parola" : "Alexandru123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-19",
+  "telefon" : "0749485959",
+  "adresa" : ""
+}, {
+  "id" : 73,
+  "nume" : "Iulian Matei",
+  "email" : "iulian.matei88@outlook.com",
+  "parola" : "Iulian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-01-19",
+  "telefon" : "0745622486",
+  "adresa" : ""
+}, {
+  "id" : 74,
+  "nume" : "Cristian Petrescu",
+  "email" : "cristian.petrescu83@outlook.com",
+  "parola" : "Cristian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-11-07",
+  "telefon" : "0739191340",
+  "adresa" : ""
+}, {
+  "id" : 75,
+  "nume" : "Luminita Stan",
+  "email" : "luminita.stan40@gmail.com",
+  "parola" : "Luminita123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-12-13",
+  "telefon" : "0794839201",
+  "adresa" : ""
+}, {
+  "id" : 76,
+  "nume" : "Marius Roman",
+  "email" : "marius.roman96@gmail.com",
+  "parola" : "Marius123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-02-04",
+  "telefon" : "0743619108",
+  "adresa" : ""
+}, {
+  "id" : 77,
+  "nume" : "Luminita Ciobanu",
+  "email" : "luminita.ciobanu72@yahoo.com",
+  "parola" : "Luminita123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-11-15",
+  "telefon" : "0726455954",
+  "adresa" : ""
+}, {
+  "id" : 78,
+  "nume" : "Teodora Constantin",
+  "email" : "teodora.constantin80@gmail.com",
+  "parola" : "Teodora123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-08-28",
+  "telefon" : "0776954598",
+  "adresa" : ""
+}, {
+  "id" : 79,
+  "nume" : "Tudor Olaru",
+  "email" : "tudor.olaru71@gmail.com",
+  "parola" : "Tudor123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-02-14",
+  "telefon" : "0791986718",
+  "adresa" : ""
+}, {
+  "id" : 80,
+  "nume" : "Gabriela Matei",
+  "email" : "gabriela.matei77@gmail.com",
+  "parola" : "Gabriela123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-04-01",
+  "telefon" : "0754370588",
+  "adresa" : ""
+}, {
+  "id" : 81,
+  "nume" : "Adrian Andrus",
+  "email" : "adrian.andrus35@outlook.com",
+  "parola" : "Adrian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-03-21",
+  "telefon" : "0777948317",
+  "adresa" : ""
+}, {
+  "id" : 82,
+  "nume" : "Valentina Roman",
+  "email" : "valentina.roman80@yahoo.com",
+  "parola" : "Valentina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-05-27",
+  "telefon" : "0746441130",
+  "adresa" : ""
+}, {
+  "id" : 83,
+  "nume" : "Gabriela Moldovan",
+  "email" : "gabriela.moldovan40@yahoo.com",
+  "parola" : "Gabriela123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-09",
+  "telefon" : "0748429121",
+  "adresa" : ""
+}, {
+  "id" : 84,
+  "nume" : "Alexandru Marinescu",
+  "email" : "alexandru.marinescu71@gmail.com",
+  "parola" : "Alexandru123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-05-15",
+  "telefon" : "0754207233",
+  "adresa" : ""
+}, {
+  "id" : 85,
+  "nume" : "Diana Olaru",
+  "email" : "diana.olaru33@gmail.com",
+  "parola" : "Diana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-11-20",
+  "telefon" : "0730155922",
+  "adresa" : ""
+}, {
+  "id" : 86,
+  "nume" : "Oana Serban",
+  "email" : "oana.serban85@yahoo.com",
+  "parola" : "Oana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-09-01",
+  "telefon" : "0742739878",
+  "adresa" : ""
+}, {
+  "id" : 87,
+  "nume" : "Valentina Dinu",
+  "email" : "valentina.dinu99@yahoo.com",
+  "parola" : "Valentina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-12-22",
+  "telefon" : "0741904096",
+  "adresa" : ""
+}, {
+  "id" : 88,
+  "nume" : "Lucian Stan",
+  "email" : "lucian.stan84@yahoo.com",
+  "parola" : "Lucian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-03",
+  "telefon" : "0757354155",
+  "adresa" : ""
+}, {
+  "id" : 89,
+  "nume" : "Florin Mihai",
+  "email" : "florin.mihai41@gmail.com",
+  "parola" : "Florin123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-04-07",
+  "telefon" : "0772446314",
+  "adresa" : ""
+}, {
+  "id" : 90,
+  "nume" : "Adrian Oprea",
+  "email" : "adrian.oprea96@yahoo.com",
+  "parola" : "Adrian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-12-20",
+  "telefon" : "0769117917",
+  "adresa" : ""
+}, {
+  "id" : 91,
+  "nume" : "Ana Ionescu",
+  "email" : "ana.ionescu40@yahoo.com",
+  "parola" : "Ana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-11-21",
+  "telefon" : "0768646915",
+  "adresa" : ""
+}, {
+  "id" : 92,
+  "nume" : "Octavian Florea",
+  "email" : "octavian.florea35@gmail.com",
+  "parola" : "Octavian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-04-17",
+  "telefon" : "0723214331",
+  "adresa" : ""
+}, {
+  "id" : 93,
+  "nume" : "Marian Ciobanu",
+  "email" : "marian.ciobanu33@outlook.com",
+  "parola" : "Marian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-03-07",
+  "telefon" : "0787492622",
+  "adresa" : ""
+}, {
+  "id" : 94,
+  "nume" : "Octavian Serban",
+  "email" : "octavian.serban98@yahoo.com",
+  "parola" : "Octavian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-05-23",
+  "telefon" : "0762920042",
+  "adresa" : ""
+}, {
+  "id" : 95,
+  "nume" : "Laurentiu Georgescu",
+  "email" : "laurentiu.georgescu56@yahoo.com",
+  "parola" : "Laurentiu123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-12-06",
+  "telefon" : "0745221607",
+  "adresa" : ""
+}, {
+  "id" : 96,
+  "nume" : "Diana Popescu",
+  "email" : "diana.popescu22@gmail.com",
+  "parola" : "Diana123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-08-03",
+  "telefon" : "0728676355",
+  "adresa" : ""
+}, {
+  "id" : 98,
+  "nume" : "Simona Dinu",
+  "email" : "simona.dinu11@yahoo.com",
+  "parola" : "Simona123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-07-17",
+  "telefon" : "0712925664",
+  "adresa" : ""
+}, {
+  "id" : 99,
+  "nume" : "Octavian Niculescu",
+  "email" : "octavian.niculescu95@outlook.com",
+  "parola" : "Octavian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-06-15",
+  "telefon" : "0718760907",
+  "adresa" : ""
+}, {
+  "id" : 100,
+  "nume" : "Cristina Niculescu",
+  "email" : "cristina.niculescu75@gmail.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-10-12",
+  "telefon" : "0757256147",
+  "adresa" : ""
+}, {
+  "id" : 101,
+  "nume" : "Cristian Mihai",
+  "email" : "cristian.mihai81@outlook.com",
+  "parola" : "Cristian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-25",
+  "telefon" : "0712782982",
+  "adresa" : ""
+}, {
+  "id" : 102,
+  "nume" : "Andreea Dumitru",
+  "email" : "andreea.dumitru76@gmail.com",
+  "parola" : "Andreea123",
+  "rol" : "membru",
+  "dataInregistrare" : "2025-02-08",
+  "telefon" : "0757226004",
+  "adresa" : ""
+}, {
+  "id" : 103,
+  "nume" : "Paul Mihai",
+  "email" : "paul.mihai12@yahoo.com",
+  "parola" : "Paul123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-09-26",
+  "telefon" : "0776647185",
+  "adresa" : ""
+}, {
+  "id" : 104,
+  "nume" : "Florin Nistor",
+  "email" : "florin.nistor9@yahoo.com",
+  "parola" : "Florin123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-01-09",
+  "telefon" : "0752103393",
+  "adresa" : ""
+}, {
+  "id" : 105,
+  "nume" : "Cristina Marinescu",
+  "email" : "cristina.marinescu30@gmail.com",
+  "parola" : "Cristina123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-10-13",
+  "telefon" : "0718989236",
+  "adresa" : ""
+}, {
+  "id" : 106,
+  "nume" : "Marian Barbu",
+  "email" : "marian.barbu14@gmail.com",
+  "parola" : "Marian123",
+  "rol" : "membru",
+  "dataInregistrare" : "2023-09-04",
+  "telefon" : "0726259250",
+  "adresa" : ""
+}, {
+  "id" : 107,
+  "nume" : "Emil Georgescu",
+  "email" : "emil.georgescu40@gmail.com",
+  "parola" : "Emil123",
+  "rol" : "membru",
+  "dataInregistrare" : "2022-11-21",
+  "telefon" : "0722548271",
+  "adresa" : ""
+}, {
+  "id" : 108,
+  "nume" : "Mihai Ionescu",
+  "email" : "mihai.ionescu@gmail.com",
+  "parola" : "MihaiTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-03-01",
+  "telefon" : "0721334455",
+  "adresa" : ""
+}, {
+  "id" : 109,
+  "nume" : "Laura Constantin",
+  "email" : "laura.constantin@yahoo.com",
+  "parola" : "LauraTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-04-15",
+  "telefon" : "0733445566",
+  "adresa" : ""
+}, {
+  "id" : 110,
+  "nume" : "Bogdan Radu",
+  "email" : "bogdan.radu@gmail.com",
+  "parola" : "BogdanTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-06-10",
+  "telefon" : "0744556677",
+  "adresa" : ""
+}, {
+  "id" : 111,
+  "nume" : "Simona Popa",
+  "email" : "simona.popa@outlook.com",
+  "parola" : "SimonaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-08-20",
+  "telefon" : "0755667788",
+  "adresa" : ""
+}, {
+  "id" : 112,
+  "nume" : "Alexandru Munteanu",
+  "email" : "alex.munteanu@gmail.com",
+  "parola" : "AlexandruTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-09-05",
+  "telefon" : "0766778899",
+  "adresa" : ""
+}, {
+  "id" : 113,
+  "nume" : "Raluca Georgescu",
+  "email" : "raluca.georgescu@yahoo.com",
+  "parola" : "RalucaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-10",
+  "telefon" : "0777889900",
+  "adresa" : ""
+}, {
+  "id" : 114,
+  "nume" : "Cristian Dumitru",
+  "email" : "cristian.dumitru@gmail.com",
+  "parola" : "CristianTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-05-22",
+  "telefon" : "0788990011",
+  "adresa" : ""
+}, {
+  "id" : 115,
+  "nume" : "Monica Vlad",
+  "email" : "monica.vlad@yahoo.com",
+  "parola" : "MonicaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-11-30",
+  "telefon" : "0799001122",
+  "adresa" : ""
+}, {
+  "id" : 116,
+  "nume" : "Stefan Popescu",
+  "email" : "stefan.popescu@gmail.com",
+  "parola" : "StefanTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-02-14",
+  "telefon" : "0710112233",
+  "adresa" : ""
+}, {
+  "id" : 117,
+  "nume" : "Diana Marinescu",
+  "email" : "diana.marinescu@outlook.com",
+  "parola" : "DianaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-07-08",
+  "telefon" : "0721223344",
+  "adresa" : ""
+}, {
+  "id" : 118,
+  "nume" : "Andrei Stoica",
+  "email" : "andrei.stoica@gmail.com",
+  "parola" : "AndreiTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-04-19",
+  "telefon" : "0732334455",
+  "adresa" : ""
+}, {
+  "id" : 119,
+  "nume" : "Elena Tudor",
+  "email" : "elena.tudor@yahoo.com",
+  "parola" : "ElenaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-10-01",
+  "telefon" : "0743445566",
+  "adresa" : ""
+}, {
+  "id" : 120,
+  "nume" : "Florin Barbu",
+  "email" : "florin.barbu@gmail.com",
+  "parola" : "FlorinTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-08-25",
+  "telefon" : "0754556677",
+  "adresa" : ""
+}, {
+  "id" : 121,
+  "nume" : "Ioana Nistor",
+  "email" : "ioana.nistor@yahoo.com",
+  "parola" : "IoanaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-03-18",
+  "telefon" : "0765667788",
+  "adresa" : ""
+}, {
+  "id" : 122,
+  "nume" : "Gabriel Ciobanu",
+  "email" : "gabriel.ciobanu@gmail.com",
+  "parola" : "GabrielTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-01-30",
+  "telefon" : "0776778899",
+  "adresa" : ""
+}, {
+  "id" : 123,
+  "nume" : "Patricia Lungu",
+  "email" : "patricia.lungu@outlook.com",
+  "parola" : "PatriciaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2022-12-05",
+  "telefon" : "0787889900",
+  "adresa" : ""
+}, {
+  "id" : 124,
+  "nume" : "Razvan Matei",
+  "email" : "razvan.matei@gmail.com",
+  "parola" : "RazvanTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2023-09-12",
+  "telefon" : "0798990011",
+  "adresa" : ""
+}, {
+  "id" : 125,
+  "nume" : "Valentina Serban",
+  "email" : "valentina.serban@yahoo.com",
+  "parola" : "ValentinaTrainer1",
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-04-22",
+  "telefon" : "0709001122",
+  "adresa" : ""
+}, {
+  "id" : 126,
+  "nume" : "Alexandra Bota",
+  "email" : "ale.bota@gmail.com",
+  "parola" : "ale123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-05-20",
+  "telefon" : "",
+  "adresa" : ""
+} ]

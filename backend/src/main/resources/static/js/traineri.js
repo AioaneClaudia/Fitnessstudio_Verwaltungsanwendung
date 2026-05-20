@@ -3,16 +3,28 @@ if (!localStorage.getItem('user')) window.location.href = 'login.html';
 const API = 'http://localhost:8080/api/traineri';
 const user = getUser();
 
+// variabilă globală pentru a păstra lista completă de traineri în memorie
+let totiTrainerii = [];
+
 async function loadTraineri() {
     const res = await fetch(API);
-    const traineri = await res.json();
+    totiTrainerii = await res.json();
 
-    const tbody = document.getElementById('tabel-traineri');
     const count = document.getElementById('count-traineri');
-    tbody.innerHTML = '';
-    if (count) count.textContent = `${traineri.length} traineri`;
+    if (count) count.textContent = `${totiTrainerii.length} traineri`;
 
-    traineri.forEach(t => {
+    // tabelul cu lista completă adusă de pe server
+    rendereazaTabelTraineri(totiTrainerii);
+}
+
+// funcție pentru a desena tabelul pe ecran
+function rendereazaTabelTraineri(listaTraineri) {
+    const tbody = document.getElementById('tabel-traineri');
+    if (!tbody) return;
+
+    tbody.innerHTML = '';
+
+    listaTraineri.forEach(t => {
         tbody.innerHTML += `
             <tr>
                 <td>${t.id}</td>
@@ -26,6 +38,25 @@ async function loadTraineri() {
             </tr>
         `;
     });
+}
+
+// funcție de filtrare
+function aplicaFiltruTraineri() {
+    const searchInput = document.getElementById('searchTrainerInput');
+    if (!searchInput) return;
+
+    const searchText = searchInput.value.toLowerCase();
+
+    // filtrare lista globală după nume/specializare
+    const traineriFiltrati = totiTrainerii.filter(t => {
+        const name = (t.nume || '').toLowerCase();
+        const specializare = (t.specializare || '').toLowerCase();
+
+        return name.includes(searchText) || specializare.includes(searchText);
+    });
+
+    // tabelul cu rezultatele găsite
+    rendereazaTabelTraineri(traineriFiltrati);
 }
 
 async function adaugaTrainer() {
@@ -52,6 +83,10 @@ async function adaugaTrainer() {
     document.getElementById('email').value = '';
     document.getElementById('telefon').value = '';
 
+    // Reseteaza bara de căutare când se adăugăun trainer nou
+    const searchInput = document.getElementById('searchTrainerInput');
+    if (searchInput) searchInput.value = '';
+
     loadTraineri();
 }
 
@@ -60,5 +95,13 @@ async function stergeTrainer(id) {
     await fetch(`${API}/${id}`, { method: 'DELETE' });
     loadTraineri();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById('searchTrainerInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', aplicaFiltruTraineri);
+    }
+});
+
 
 loadTraineri();

@@ -1,32 +1,75 @@
-if (!localStorage.getItem('user')) window.location.href = 'login.html';
-
 const API = 'http://localhost:8080/api/membri';
-const user = getUser();
+let totiMembrii = [];
+let directieSortare = true;
 
 async function loadMembri() {
     const res = await fetch(API);
-    const membri = await res.json();
+    totiMembrii = await res.json();
 
-    const tbody = document.getElementById('tabel-membri');
+    // Actualizăm badge-ul nativ cu numărul total de membri aduși din DB
     const count = document.getElementById('count-membri');
-    tbody.innerHTML = '';
-    if (count) count.textContent = `${membri.length} membri`;
+    if (count) count.textContent = `${totiMembrii.length} membri`;
 
-    membri.forEach(m => {
+    aplicaFiltrele();
+}
+
+function rendereazaTabelMembri(listaMembri) {
+    const tbody = document.getElementById('tabel-membri');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+
+    listaMembri.forEach(m => {
         tbody.innerHTML += `
             <tr>
                 <td>${m.id}</td>
                 <td>${m.nume}</td>
                 <td>${m.email}</td>
-                <td>${m.telefon || '—'}</td>
-                <td>${m.dataInscriere || '—'}</td>
-                <td><span class="badge ${m.activ ? 'badge-success' : 'badge-secondary'}">${m.activ ? 'Activ' : 'Inactiv'}</span></td>
+                <td>${m.telefon}</td>
+                <td>${m.dataInscriere}</td>
                 <td>
-                    ${user && user.rol === 'admin' ? `<button class="btn btn-danger btn-sm" onclick="stergeMembru(${m.id})"><i class="ti ti-trash"></i></button>` : ''}
+                    <span class="badge ${m.activ ? 'bg-success' : 'bg-secondary'}">
+                        ${m.activ ? 'Activ' : 'Inactiv'}
+                    </span>
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-sm" onclick="stergeMembru(${m.id})">Șterge</button>
                 </td>
             </tr>
         `;
     });
+}
+
+function aplicaFiltrele() {
+    const searchInput = document.getElementById('searchInput');
+    const statusFilter = document.getElementById('statusFilter');
+
+    if (!searchInput || !statusFilter) return;
+
+    const searchText = searchInput.value.toLowerCase();
+    const selectedStatus = statusFilter.value;
+
+    const membriFiltrati = totiMembrii.filter(m => {
+        const matchesSearch = (m.nume || '').toLowerCase().includes(searchText) || (m.email || '').toLowerCase().includes(searchText);
+        const statusText = m.activ ? 'Activ' : 'Inactiv';
+        const matchesStatus = (selectedStatus === 'all') || (statusText === selectedStatus);
+        return matchesSearch && matchesStatus;
+    });
+
+    rendereazaTabelMembri(membriFiltrati);
+}
+
+function sorteazaTabelDupaStatus() {
+    totiMembrii.sort((a, b) => {
+        const textA = a.activ ? 'Activ' : 'Inactiv';
+        const textB = b.activ ? 'Activ' : 'Inactiv';
+        return directieSortare ? textA.localeCompare(textB) : textB.localeCompare(textA);
+    });
+
+    directieSortare = !directieSortare;
+    const sortIcon = document.getElementById('sort-icon');
+    if (sortIcon) sortIcon.textContent = directieSortare ? ' ▲' : ' ▼';
+
+    aplicaFiltrele();
 }
 
 async function adaugaMembru() {
@@ -59,11 +102,18 @@ async function adaugaMembru() {
 
 async function stergeMembru(id) {
     if (!confirm('Sigur vrei să ștergi acest membru?')) return;
-    await fetch(`${API}/${id}`, {
-        method: 'DELETE',
-        headers: { 'X-User-Role': user.rol }
-    });
+    await fetch(`${API}/${id}`, { method: 'DELETE' });
     loadMembri();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById('searchInput');
+    const statusFilter = document.getElementById('statusFilter');
+
+    if (searchInput && statusFilter) {
+        searchInput.addEventListener('input', aplicaFiltrele);
+        statusFilter.addEventListener('change', aplicaFiltrele);
+    }
+});
 
 loadMembri();

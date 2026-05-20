@@ -41,6 +41,20 @@
         <p>Gestionează membrii studioului</p>
     </div>
 
+    <div class="filter-container" style="display: flex; gap: 15px; margin-bottom: 20px; align-items: center;">
+        <div style="flex: 1;">
+            <input type="text" id="searchInput" placeholder="🔍 Caută după nume sau email..."
+                   style="width: 100%; padding: 12px 15px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; background-color: #fff; color: #333;">
+        </div>
+        <div>
+            <select id="statusFilter" style="padding: 12px 15px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; background-color: white; color: #333; cursor: pointer;">
+                <option value="all">Toți membrii</option>
+                <option value="Activ">Activ</option>
+                <option value="Inactiv">Inactiv</option>
+            </select>
+        </div>
+    </div>
+
     <div class="card" id="zona-adaugare" style="display:none">
         <div class="card-header">
             <h5>Adaugă membru nou</h5>
@@ -79,15 +93,15 @@
         </div>
         <table class="table">
             <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nume</th>
-                    <th>Email</th>
-                    <th>Telefon</th>
-                    <th>Data înscrierii</th>
-                    <th>Status</th>
-                    <th>Acțiuni</th>
-                </tr>
+            <tr>
+                <th>ID</th>
+                <th>Nume</th>
+                <th>Email</th>
+                <th>Telefon</th>
+                <th>Data înscrierii</th>
+                <th onclick="sorteazaTabelDupaStatus()" style="cursor: pointer; user-select: none;">Status <span id="sort-icon">↕</span></th>
+                <th>Acțiuni</th>
+            </tr>
             </thead>
             <tbody id="tabel-membri"></tbody>
         </table>

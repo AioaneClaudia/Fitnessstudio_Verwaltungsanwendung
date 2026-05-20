@@ -1,149 +1,127 @@
-[
-  {
-    "id": 1,
-    "nume": "David Andrus",
-    "specializare": "Fitness general",
-    "email": "davidandrua@gmail.com",
-    "telefon": "0943230232"
-  },
-  {
-    "id": 8,
-    "nume": "Crucin Anya",
-    "specializare": "Cardio",
-    "email": "crucin.anya@yahoo.com",
-    "telefon": "0737823723"
-  },
-  {
-    "id": 9,
-    "nume": "Andreea Aldea",
-    "specializare": "Pilates",
-    "email": "andreealdea13@gmail.com",
-    "telefon": "0962617437"
-  },
-  {
-    "id": 108,
-    "nume": "Mihai Ionescu",
-    "specializare": "Yoga",
-    "email": "mihai.ionescu@gmail.com",
-    "telefon": "0721334455"
-  },
-  {
-    "id": 109,
-    "nume": "Laura Constantin",
-    "specializare": "Zumba",
-    "email": "laura.constantin@yahoo.com",
-    "telefon": "0733445566"
-  },
-  {
-    "id": 110,
-    "nume": "Bogdan Radu",
-    "specializare": "Crossfit",
-    "email": "bogdan.radu@gmail.com",
-    "telefon": "0744556677"
-  },
-  {
-    "id": 111,
-    "nume": "Simona Popa",
-    "specializare": "Spinning",
-    "email": "simona.popa@outlook.com",
-    "telefon": "0755667788"
-  },
-  {
-    "id": 112,
-    "nume": "Alexandru Munteanu",
-    "specializare": "Box",
-    "email": "alex.munteanu@gmail.com",
-    "telefon": "0766778899"
-  },
-  {
-    "id": 113,
-    "nume": "Raluca Georgescu",
-    "specializare": "Stretching",
-    "email": "raluca.georgescu@yahoo.com",
-    "telefon": "0777889900"
-  },
-  {
-    "id": 114,
-    "nume": "Cristian Dumitru",
-    "specializare": "Kickbox",
-    "email": "cristian.dumitru@gmail.com",
-    "telefon": "0788990011"
-  },
-  {
-    "id": 115,
-    "nume": "Monica Vlad",
-    "specializare": "Body pump",
-    "email": "monica.vlad@yahoo.com",
-    "telefon": "0799001122"
-  },
-  {
-    "id": 116,
-    "nume": "Stefan Popescu",
-    "specializare": "TRX",
-    "email": "stefan.popescu@gmail.com",
-    "telefon": "0710112233"
-  },
-  {
-    "id": 117,
-    "nume": "Diana Marinescu",
-    "specializare": "Aerobic",
-    "email": "diana.marinescu@outlook.com",
-    "telefon": "0721223344"
-  },
-  {
-    "id": 118,
-    "nume": "Andrei Stoica",
-    "specializare": "Powerlifting",
-    "email": "andrei.stoica@gmail.com",
-    "telefon": "0732334455"
-  },
-  {
-    "id": 119,
-    "nume": "Elena Tudor",
-    "specializare": "Yoga",
-    "email": "elena.tudor@yahoo.com",
-    "telefon": "0743445566"
-  },
-  {
-    "id": 120,
-    "nume": "Florin Barbu",
-    "specializare": "Fitness general",
-    "email": "florin.barbu@gmail.com",
-    "telefon": "0754556677"
-  },
-  {
-    "id": 121,
-    "nume": "Ioana Nistor",
-    "specializare": "Pilates",
-    "email": "ioana.nistor@yahoo.com",
-    "telefon": "0765667788"
-  },
-  {
-    "id": 122,
-    "nume": "Gabriel Ciobanu",
-    "specializare": "Crossfit",
-    "email": "gabriel.ciobanu@gmail.com",
-    "telefon": "0776778899"
-  },
-  {
-    "id": 123,
-    "nume": "Patricia Lungu",
-    "specializare": "Zumba",
-    "email": "patricia.lungu@outlook.com",
-    "telefon": "0787889900"
-  },
-  {
-    "id": 124,
-    "nume": "Razvan Matei",
-    "specializare": "Spinning",
-    "email": "razvan.matei@gmail.com",
-    "telefon": "0798990011"
-  },
-  {
-    "id": 125,
-    "nume": "Valentina Serban",
-    "specializare": "Body pump",
-    "email": "valentina.serban@yahoo.com",
-    "telefon": "0709001122"
-  }
-]
+[ {
+  "id" : 1,
+  "nume" : "David Andrus",
+  "specializare" : "Fitness general",
+  "email" : "davidandrua@gmail.com",
+  "telefon" : "0943230232"
+}, {
+  "id" : 8,
+  "nume" : "Crucin Anya",
+  "specializare" : "Cardio",
+  "email" : "crucin.anya@yahoo.com",
+  "telefon" : "0737823723"
+}, {
+  "id" : 9,
+  "nume" : "Andreea Aldea",
+  "specializare" : "Pilates",
+  "email" : "andreealdea13@gmail.com",
+  "telefon" : "0962617437"
+}, {
+  "id" : 108,
+  "nume" : "Mihai Ionescu",
+  "specializare" : "Yoga",
+  "email" : "mihai.ionescu@gmail.com",
+  "telefon" : "0721334455"
+}, {
+  "id" : 109,
+  "nume" : "Laura Constantin",
+  "specializare" : "Zumba",
+  "email" : "laura.constantin@yahoo.com",
+  "telefon" : "0733445566"
+}, {
+  "id" : 110,
+  "nume" : "Bogdan Radu",
+  "specializare" : "Crossfit",
+  "email" : "bogdan.radu@gmail.com",
+  "telefon" : "0744556677"
+}, {
+  "id" : 111,
+  "nume" : "Simona Popa",
+  "specializare" : "Spinning",
+  "email" : "simona.popa@outlook.com",
+  "telefon" : "0755667788"
+}, {
+  "id" : 112,
+  "nume" : "Alexandru Munteanu",
+  "specializare" : "Box",
+  "email" : "alex.munteanu@gmail.com",
+  "telefon" : "0766778899"
+}, {
+  "id" : 113,
+  "nume" : "Raluca Georgescu",
+  "specializare" : "Stretching",
+  "email" : "raluca.georgescu@yahoo.com",
+  "telefon" : "0777889900"
+}, {
+  "id" : 114,
+  "nume" : "Cristian Dumitru",
+  "specializare" : "Kickbox",
+  "email" : "cristian.dumitru@gmail.com",
+  "telefon" : "0788990011"
+}, {
+  "id" : 115,
+  "nume" : "Monica Vlad",
+  "specializare" : "Body pump",
+  "email" : "monica.vlad@yahoo.com",
+  "telefon" : "0799001122"
+}, {
+  "id" : 116,
+  "nume" : "Stefan Popescu",
+  "specializare" : "TRX",
+  "email" : "stefan.popescu@gmail.com",
+  "telefon" : "0710112233"
+}, {
+  "id" : 117,
+  "nume" : "Diana Marinescu",
+  "specializare" : "Aerobic",
+  "email" : "diana.marinescu@outlook.com",
+  "telefon" : "0721223344"
+}, {
+  "id" : 118,
+  "nume" : "Andrei Stoica",
+  "specializare" : "Powerlifting",
+  "email" : "andrei.stoica@gmail.com",
+  "telefon" : "0732334455"
+}, {
+  "id" : 119,
+  "nume" : "Elena Tudor",
+  "specializare" : "Yoga",
+  "email" : "elena.tudor@yahoo.com",
+  "telefon" : "0743445566"
+}, {
+  "id" : 120,
+  "nume" : "Florin Barbu",
+  "specializare" : "Fitness general",
+  "email" : "florin.barbu@gmail.com",
+  "telefon" : "0754556677"
+}, {
+  "id" : 121,
+  "nume" : "Ioana Nistor",
+  "specializare" : "Pilates",
+  "email" : "ioana.nistor@yahoo.com",
+  "telefon" : "0765667788"
+}, {
+  "id" : 122,
+  "nume" : "Gabriel Ciobanu",
+  "specializare" : "Crossfit",
+  "email" : "gabriel.ciobanu@gmail.com",
+  "telefon" : "0776778899"
+}, {
+  "id" : 123,
+  "nume" : "Patricia Lungu",
+  "specializare" : "Zumba",
+  "email" : "patricia.lungu@outlook.com",
+  "telefon" : "0787889900"
+}, {
+  "id" : 124,
+  "nume" : "Razvan Matei",
+  "specializare" : "Spinning",
+  "email" : "razvan.matei@gmail.com",
+  "telefon" : "0798990011"
+}, {
+  "id" : 125,
+  "nume" : "Valentina Serban",
+  "specializare" : "Body pump",
+  "email" : "valentina.serban@yahoo.com",
+  "telefon" : "0709001122"
+} ]
