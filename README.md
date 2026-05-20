@@ -33,7 +33,7 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 
 | Bereich | Technologie |
 |---|---|
-| Frontend | HTML, CSS |
+| Frontend | HTML, CSS, JavaScript |
 | Backend | Java, Springboot, Jackson(JSON) |
 | Datenspeicherung | JSON-Dateien |
 | Versionskontrolle | Git / GitHub |
