@@ -3,6 +3,7 @@ package com.fitness.backend.controllers;
 import com.fitness.backend.models.Membru;
 import com.fitness.backend.services.MembruService;
 import com.fitness.backend.storage.JsonStorage;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
