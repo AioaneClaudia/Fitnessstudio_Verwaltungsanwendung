@@ -26,12 +26,22 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Parolă</label>
-                        <input type="password" id="parola" class="form-control" placeholder="••••••••">
+                        <div class="input-group">
+                            <input type="password" id="parola" class="form-control" placeholder="••••••••">
+                            <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('parola')">
+                                👁️
+                            </button>
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Confirmă parola</label>
+                    <label class="form-label">Confirmă Parolă</label>
+                    <div class="input-group">
                         <input type="password" id="parola2" class="form-control" placeholder="••••••••">
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePassword('parola2')">
+                            👁️
+                        </button>
                     </div>
+                </div>
 
                     <div class="mb-4">
                         <label class="form-label">Tip cont / Rol</label>
