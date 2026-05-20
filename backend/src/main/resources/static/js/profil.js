@@ -1,5 +1,4 @@
 requireAuth();
-renderNavbar();
 
 const API_USERS = 'http://localhost:8080/api/users';
 const API_CURSURI = 'http://localhost:8080/api/cursuri';
@@ -30,15 +29,15 @@ async function loadCursuriMele() {
     );
 
     if (cursurileMele.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted">Nu ești înscris la niciun curs.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#aaa;padding:20px">Nu ești înscris la niciun curs.</td></tr>';
         return;
     }
 
     cursurileMele.forEach(c => {
         const eInscris = c.membriInscrisi && c.membriInscrisi.includes(user.id);
         const status = eInscris
-            ? '<span class="badge bg-success">Înscris</span>'
-            : '<span class="badge bg-warning text-dark">Waiting</span>';
+            ? '<span class="badge badge-success">Înscris</span>'
+            : '<span class="badge badge-warning">Waiting</span>';
 
         tbody.innerHTML += `
             <tr>
@@ -47,7 +46,7 @@ async function loadCursuriMele() {
                 <td>${c.ora}</td>
                 <td>${status}</td>
                 <td>
-                    <button class="btn btn-outline-danger btn-sm" onclick="retragere(${c.id})">Retrage</button>
+                    <button class="btn btn-danger btn-sm" onclick="retragere(${c.id})">Retrage</button>
                 </td>
             </tr>
         `;
@@ -74,11 +73,12 @@ async function salveazaProfil() {
         document.getElementById('eroare').classList.add('d-none');
         setTimeout(() => document.getElementById('succes').classList.add('d-none'), 3000);
 
-        // Actualizează numele în localStorage
         const userLocal = getUser();
         userLocal.nume = updated.nume;
         localStorage.setItem('user', JSON.stringify(userLocal));
-        renderNavbar();
+
+        document.getElementById('user-name').textContent = updated.nume;
+        document.getElementById('user-avatar').textContent = updated.nume.split(' ').map(n=>n[0]).join('').toUpperCase().slice(0,2);
     } else {
         document.getElementById('eroare').textContent = 'Eroare la salvare!';
         document.getElementById('eroare').classList.remove('d-none');
@@ -87,11 +87,7 @@ async function salveazaProfil() {
 
 async function retragere(cursId) {
     if (!confirm('Sigur vrei să te retragi de la acest curs?')) return;
-
-    await fetch(`${API_CURSURI}/${cursId}/inscriere/${user.id}`, {
-        method: 'DELETE'
-    });
-
+    await fetch(`${API_CURSURI}/${cursId}/inscriere/${user.id}`, { method: 'DELETE' });
     loadCursuriMele();
 }
 

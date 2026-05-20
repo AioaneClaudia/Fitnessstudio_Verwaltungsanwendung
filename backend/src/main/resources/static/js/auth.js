@@ -23,6 +23,6 @@ function logout() {
 function renderNavbar() {
     const user = getUser();
     if (!user) return;
-
-    document.getElementById('user-info').textContent = `👤 ${user.nume} (${user.rol})`;
+    const el = document.getElementById('user-info');
+    if (el) el.textContent = `${user.nume} (${user.rol})`;
 }

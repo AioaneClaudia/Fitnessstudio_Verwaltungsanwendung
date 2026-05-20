@@ -2,8 +2,6 @@ const API_MEMBRI = 'http://localhost:8080/api/membri';
 const API_TRAINERI = 'http://localhost:8080/api/traineri';
 const API_CURSURI = 'http://localhost:8080/api/cursuri';
 
-if (!localStorage.getItem('user')) window.location.href = 'login.html';
-
 async function loadDashboard() {
     const [membri, traineri, cursuri] = await Promise.all([
         fetch(API_MEMBRI).then(r => r.json()),
@@ -11,31 +9,24 @@ async function loadDashboard() {
         fetch(API_CURSURI).then(r => r.json())
     ]);
 
-    // Statistici
-    const membriActivi = membri.filter(m => m.activ).length;
-    document.getElementById('nr-membri').textContent = membriActivi;
+    document.getElementById('nr-membri').textContent = membri.filter(m => m.activ).length;
     document.getElementById('nr-traineri').textContent = traineri.length;
     document.getElementById('nr-cursuri').textContent = cursuri.length;
 
-    // Auslastung general
     const totalInscrisi = cursuri.reduce((sum, c) => sum + c.inscrisi, 0);
     const totalCapacitate = cursuri.reduce((sum, c) => sum + c.capacitateMaxima, 0);
-    const auslastungGeneral = totalCapacitate > 0
-        ? Math.round((totalInscrisi / totalCapacitate) * 100)
-        : 0;
-    document.getElementById('auslastung-general').textContent = auslastungGeneral + '%';
+    const auslastung = totalCapacitate > 0 ? Math.round((totalInscrisi / totalCapacitate) * 100) : 0;
+    document.getElementById('auslastung-general').textContent = auslastung + '%';
 
-    // Tabel auslastung cursuri
     const tbody = document.getElementById('tabel-auslastung');
     tbody.innerHTML = '';
 
     cursuri.forEach(c => {
-        const auslastung = c.capacitateMaxima > 0
+        const a = c.capacitateMaxima > 0
             ? Math.round((c.inscrisi / c.capacitateMaxima) * 100)
             : 0;
 
-        const badgeColor = auslastung >= 90 ? 'bg-danger' :
-                           auslastung >= 60 ? 'bg-warning text-dark' : 'bg-success';
+        const progressClass = a >= 90 ? 'bg-danger' : a >= 60 ? 'bg-warning' : 'bg-success';
 
         tbody.innerHTML += `
             <tr>
@@ -44,11 +35,10 @@ async function loadDashboard() {
                 <td>${c.ora}</td>
                 <td>${c.inscrisi} / ${c.capacitateMaxima}</td>
                 <td>
-                    <div class="progress" style="height: 20px;">
-                        <div class="progress-bar ${badgeColor}" style="width: ${auslastung}%">
-                            ${auslastung}%
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar ${progressClass}" style="width:${a}%"></div>
                     </div>
+                    <small style="font-size:11px;color:#888">${a}%</small>
                 </td>
             </tr>
         `;
