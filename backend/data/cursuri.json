@@ -1,21 +1,79 @@
-[ {
-  "id" : 1,
-  "nume" : "Yoga",
-  "trainerId" : 8,
-  "zi" : "Vineri",
-  "ora" : "13:20",
-  "capacitateMaxima" : 12,
-  "inscrisi" : 2,
-  "membriInscrisi" : [ 6, 4 ],
-  "waitingList" : [ ]
-}, {
-  "id" : 2,
-  "nume" : "Box",
-  "trainerId" : 1,
-  "zi" : "Marți",
-  "ora" : "12:22",
-  "capacitateMaxima" : 22,
-  "inscrisi" : 0,
-  "membriInscrisi" : [ ],
-  "waitingList" : [ ]
-} ]
+[
+  {
+    "id": 1,
+    "nume": "Yoga",
+    "trainerId": 8,
+    "zi": "Vineri",
+    "ora": "13:20",
+    "capacitateMaxima": 12,
+    "inscrisi": 2,
+    "membriInscrisi": [6, 4],
+    "waitingList": []
+  },
+  {
+    "id": 2,
+    "nume": "Box",
+    "trainerId": 1,
+    "zi": "Marți",
+    "ora": "12:22",
+    "capacitateMaxima": 22,
+    "inscrisi": 0,
+    "membriInscrisi": [],
+    "waitingList": []
+  },
+  {
+    "id": 3,
+    "nume": "Pilates",
+    "trainerId": 9,
+    "zi": "Luni",
+    "ora": "09:00",
+    "capacitateMaxima": 10,
+    "inscrisi": 10,
+    "membriInscrisi": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "waitingList": [13, 14]
+  },
+  {
+    "id": 4,
+    "nume": "Zumba",
+    "trainerId": 8,
+    "zi": "Miercuri",
+    "ora": "18:00",
+    "capacitateMaxima": 20,
+    "inscrisi": 8,
+    "membriInscrisi": [3, 5, 6, 7, 9, 10, 11, 12],
+    "waitingList": []
+  },
+  {
+    "id": 5,
+    "nume": "Spinning",
+    "trainerId": 10,
+    "zi": "Joi",
+    "ora": "07:30",
+    "capacitateMaxima": 15,
+    "inscrisi": 12,
+    "membriInscrisi": [3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15],
+    "waitingList": [16]
+  },
+  {
+    "id": 6,
+    "nume": "Crossfit",
+    "trainerId": 9,
+    "zi": "Sâmbătă",
+    "ora": "10:00",
+    "capacitateMaxima": 8,
+    "inscrisi": 3,
+    "membriInscrisi": [3, 5, 7],
+    "waitingList": []
+  },
+  {
+    "id": 7,
+    "nume": "Kickbox",
+    "trainerId": 10,
+    "zi": "Marți",
+    "ora": "19:00",
+    "capacitateMaxima": 16,
+    "inscrisi": 6,
+    "membriInscrisi": [4, 6, 7, 9, 11, 12],
+    "waitingList": []
+  }
+]
