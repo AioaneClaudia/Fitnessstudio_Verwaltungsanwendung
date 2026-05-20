@@ -11,7 +11,7 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 **Zielgruppen:**
 - **Admins** – vollständige Verwaltung aller Bereiche
 - **Trainer** – Einsicht in eigene Kurse und Studioauslastung
-- **Mitglieder** – Self-Service-Portal, Kursanmeldung, Profilpflege
+- **Mitglieder** – Kursanmeldung, Profilpflege
 
 ---
 
@@ -20,10 +20,10 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 | Modul | Beschreibung |
 |---|---|
 | Authentifizierung | Registrierung, Login, rollenbasierte Zugriffskontrolle (RBAC) |
-| Mitgliederverwaltung | Mitgliedschaft bearbeiten / pausieren / kündigen, DSGVO-Export |
-| Trainerverwaltung | Trainerprofile, Qualifikationen, Auslastungsübersicht |
+| Mitgliederverwaltung | Mitgliedschaft bearbeiten / pausieren / kündigen |
+| Trainerverwaltung | Trainerprofile, Auslastungsübersicht |
 | Kursplan | Kurse erstellen, Anmeldung / Abmeldung, Warteliste |
-| Studioauslastung | Echtzeit-Check-in/out, Auslastungsanzeige, historische Analyse |
+| Studioauslastung | Echtzeit-Check-in/out, Auslastungsanzeige |
 
 ---
 
@@ -33,8 +33,8 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 
 | Bereich | Technologie |
 |---|---|
-| Frontend | – |
-| Backend | – |
+| Frontend | HTML, CSS |
+| Backend | Java, Springboot, Jackson(JSON) |
 | Datenspeicherung | JSON-Dateien |
 | Versionskontrolle | Git / GitHub |
 
@@ -67,8 +67,8 @@ Diese Anwendung ermöglicht die digitale Verwaltung aller wesentlichen Abläufe 
 
 ```bash
 # Repository klonen
-git clone https://github.com/DEIN-USERNAME/DEIN-REPO.git
-cd DEIN-REPO
+git clone https://github.com/AioaneClaudia/Fitnessstudio_Verwaltungsanwendung.git
+cd Fitnessstudio_Verwaltungsanwendung
 
 # Abhängigkeiten installieren
 npm install
@@ -131,8 +131,3 @@ Das Projekt wird über ein GitHub Project Board (Kanban) verwaltet:
 
 Bei Unklarheiten zu Anforderungen oder Issues wendet euch an den **Business Analyst** des Projekts – entweder direkt über GitHub (Kommentar im Issue mit `@mention`) oder persönlich.
 
----
-
-## ⚖️ DSGVO-Hinweis
-
-Diese Anwendung verarbeitet personenbezogene Daten (Namen, E-Mail-Adressen, Geburtsdaten usw.). Alle Entwickler sind dafür verantwortlich, dass neue Funktionen datenschutzkonform implementiert werden. Bei Fragen zur DSGVO-Konformität den Business Analysten konsultieren.
