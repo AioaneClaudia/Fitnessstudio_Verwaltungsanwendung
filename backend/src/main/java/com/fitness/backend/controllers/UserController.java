@@ -36,4 +36,27 @@ public class UserController {
         JsonStorage.write("users", users);
         return Map.of("status", "ok");
     }
+
+    @GetMapping("/{id}")
+    public User getById(@PathVariable int id) {
+        List<User> users = JsonStorage.read("users", User.class);
+        return users.stream()
+                .filter(u -> u.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
+
+    @PutMapping("/{id}/profil")
+    public Map<String, String> updateProfil(@PathVariable int id, @RequestBody User updated) {
+        List<User> users = JsonStorage.read("users", User.class);
+        for (User u : users) {
+            if (u.getId() == id) {
+                u.setNume(updated.getNume());
+                u.setTelefon(updated.getTelefon());
+                u.setAdresa(updated.getAdresa());
+            }
+        }
+        JsonStorage.write("users", users);
+        return Map.of("status", "ok");
+    }
 }

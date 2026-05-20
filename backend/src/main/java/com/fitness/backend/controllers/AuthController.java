@@ -52,6 +52,7 @@ public class AuthController {
         userNou.setId(noulId);
 
         // 3. Salvăm utilizatorul în users.json (își va păstra rolul selectat în dropdown)
+        userNou.setDataInregistrare(java.time.LocalDate.now().toString());
         users.add(userNou);
         JsonStorage.write("users", users);
 

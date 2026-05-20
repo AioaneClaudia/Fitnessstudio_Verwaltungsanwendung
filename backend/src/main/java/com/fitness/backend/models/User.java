@@ -6,6 +6,9 @@ public class User {
     private String email;
     private String parola;
     private String rol;
+    private String dataInregistrare;
+    private String telefon;
+    private String adresa;
 
     public User() {}
 
@@ -23,4 +26,13 @@ public class User {
 
     public String getRol() { return rol; }
     public void setRol(String rol) { this.rol = rol; }
+
+    public String getDataInregistrare() { return dataInregistrare; }
+    public void setDataInregistrare(String dataInregistrare) { this.dataInregistrare = dataInregistrare; }
+
+    public String getTelefon() { return telefon; }
+    public void setTelefon(String telefon) { this.telefon = telefon; }
+
+    public String getAdresa() { return adresa; }
+    public void setAdresa(String adresa) { this.adresa = adresa; }
 }

@@ -3,59 +3,89 @@
   "nume" : "Admin Principal",
   "email" : "admin@fitness.com",
   "parola" : "admin123",
-  "rol" : "admin"
+  "rol" : "admin",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 2,
   "nume" : "Trainer Ion",
   "email" : "trainer@fitness.com",
   "parola" : "trainer123",
-  "rol" : "trainer"
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 3,
   "nume" : "David Andrus",
   "email" : "davidandrua@gmail.com",
   "parola" : "David05",
-  "rol" : "membru"
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 4,
   "nume" : "David ",
   "email" : "davidandrua@gmal.com",
   "parola" : "David11",
-  "rol" : "membru"
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 5,
   "nume" : "Andreea",
   "email" : "dsajkhdjksa@yahoo",
   "parola" : "123456",
-  "rol" : "membru"
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 6,
   "nume" : "Paul",
   "email" : "raulnistor008@gmail.com",
   "parola" : "Paul123",
-  "rol" : "membru"
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "078432321",
+  "adresa" : "Crinului 13"
 }, {
   "id" : 7,
   "nume" : "Crucin Patricia",
   "email" : "crucin.patricia@yahoo.com",
   "parola" : "1234567",
-  "rol" : "membru"
+  "rol" : "membru",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 8,
   "nume" : "Crucin Anya",
   "email" : "crucin.anya@yahoo.com",
   "parola" : "anyapatri",
-  "rol" : "trainer"
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 9,
   "nume" : "andreea",
   "email" : "andreealdea13@gmail.com",
   "parola" : "Andreea.13",
-  "rol" : "trainer"
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 }, {
   "id" : 10,
   "nume" : "Ion Popescu",
   "email" : "ionpopescu@gmail.com",
   "parola" : "Ionpop123",
-  "rol" : "trainer"
+  "rol" : "trainer",
+  "dataInregistrare" : "2024-01-01",
+  "telefon" : "",
+  "adresa" : ""
 } ]
