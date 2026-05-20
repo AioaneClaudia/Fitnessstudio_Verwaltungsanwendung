@@ -88,4 +88,13 @@
   "dataInregistrare" : "2024-01-01",
   "telefon" : "",
   "adresa" : ""
+}, {
+  "id" : 11,
+  "nume" : "Alexandra",
+  "email" : "alexandra@gmail.com",
+  "parola" : "Ale123",
+  "rol" : "membru",
+  "dataInregistrare" : "2026-05-20",
+  "telefon" : null,
+  "adresa" : null
 } ]

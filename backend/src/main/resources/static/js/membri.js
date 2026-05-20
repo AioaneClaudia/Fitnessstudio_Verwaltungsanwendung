@@ -59,7 +59,10 @@ async function adaugaMembru() {
 
 async function stergeMembru(id) {
     if (!confirm('Sigur vrei să ștergi acest membru?')) return;
-    await fetch(`${API}/${id}`, { method: 'DELETE' });
+    await fetch(`${API}/${id}`, {
+        method: 'DELETE',
+        headers: { 'X-User-Role': user.rol }
+    });
     loadMembri();
 }
 

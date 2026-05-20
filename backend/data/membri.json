@@ -5,6 +5,8 @@
   "telefon" : "0722111222",
   "dataInscriere" : "2024-01-15",
   "activ" : true,
+  "estePontat" : false,
+  "ultimaOraPontare" : null,
   "cursuriInscriseIds" : [ ]
 }, {
   "id" : 5,
@@ -13,6 +15,8 @@
   "telefon" : "0733222333",
   "dataInscriere" : "2024-02-20",
   "activ" : true,
+  "estePontat" : false,
+  "ultimaOraPontare" : null,
   "cursuriInscriseIds" : [ ]
 }, {
   "id" : 6,
@@ -21,6 +25,8 @@
   "telefon" : "0744333444",
   "dataInscriere" : "2024-03-10",
   "activ" : false,
+  "estePontat" : false,
+  "ultimaOraPontare" : null,
   "cursuriInscriseIds" : [ ]
 }, {
   "id" : 7,
@@ -29,5 +35,7 @@
   "telefon" : "0740353209",
   "dataInscriere" : "2026-05-20",
   "activ" : true,
+  "estePontat" : false,
+  "ultimaOraPontare" : null,
   "cursuriInscriseIds" : [ ]
 } ]

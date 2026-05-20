@@ -33,10 +33,14 @@ public class MembruController {
         return membruService.update(id, membru);
     }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id) {
-        membruService.delete(id);
+   @DeleteMapping("/{id}")
+    public ResponseEntity<?> delete(@PathVariable int id, @RequestHeader(value = "X-User-Role", defaultValue = "") String rol) {
+    if (!"admin".equals(rol)) {
+        return ResponseEntity.status(403).body("Nu ai permisiunea să ștergi membri!");
     }
+    membruService.delete(id);
+    return ResponseEntity.ok().build();
+}
 
     @PostMapping("/{id}/pontaj")
     public Membru pontaj(@PathVariable int id) {
